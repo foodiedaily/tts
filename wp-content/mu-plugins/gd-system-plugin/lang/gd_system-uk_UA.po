@@ -1,0 +1,107 @@
+# Copyright (C) 2014 System Plugin
+# This file is distributed under the same license as the System Plugin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: System Plugin\n"
+"POT-Creation-Date: 2014-04-02 00:39:56+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-04-07 16:09-0800\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk_UA\n"
+"X-Generator: Poedit 1.6.4\n"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:71
+msgid "Flush Cache"
+msgstr "Очистити кеш"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:79
+msgid "GoDaddy Settings"
+msgstr "Налаштування GoDaddy"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:81
+msgid "Account Settings"
+msgstr "Налаштування акаунта"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:147
+msgid ""
+"For your security, we’ve disabled WordPress’ built-in file editor by default."
+msgstr ""
+"З міркувань безпеки, за умовчанням відключено вбудований редактор файлів "
+"хостингу WordPress."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:148
+msgid "If you enable editing, all plugin and theme files become editable."
+msgstr ""
+"Якщо увімкнути функцію редагування, то всі плагіни і файли теми теж стають "
+"доступними для редагування."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:149
+msgid "Enable Editing"
+msgstr "Увімкнути редагування"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:161
+msgid "File editing is not enabled on this site"
+msgstr "На даному сайті редагування файлів не активовано"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:189
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:212
+msgid "Sorry, but you have to <a href=\"%s\">change your domain name here</a>."
+msgstr "Вибачте, але необхідно <a href=\"%s\">змінити доменне ім'я</a>."
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:71
+msgid "Unknown verb: %s. Try GET or POST"
+msgstr "Невідоме дієслово: %s. Спробуйте ОТРИМАТИ або РОЗМІСТИТИ"
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:106
+msgid "API returned bad status: %d: %s"
+msgstr "В API виявлено помилку невірний статус: %d: %s"
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:80
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:95
+msgid "Not available"
+msgstr "Недоступно"
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:81
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:96
+msgid ""
+"This plugin is not allowed on our system due to performance, security, or "
+"compatibility concerns. Please contact our support with any questions."
+msgstr ""
+"Даний плагін заборонено системою з міркувань ефективності, безпеки або "
+"сумісності. У разі виникнення запитань, будь ласка, зверніться до служби "
+"підтримки."
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:117
+msgid ""
+"This plugin %s is not allowed on our system. It has been automatically "
+"deactivated."
+msgstr "Даний плагін заборонено %s системою. Він відключений автоматично."
+
+#: gd-system-plugin/class-gd-system-plugin-cname.php:126
+msgid ""
+"<strong>Note:</strong> You're using the temporary domain <strong>%s</"
+"strong>. <a href=\"%s\" target=\"_blank\">Change domain</a>"
+msgstr ""
+"<strong>Примітка:</strong> Ви використовуєте тимчасовий домен <strong>%s</"
+"strong>. <a href=\"%s\" target=\"_blank\">Змініть домен</a>"
+
+#: gd-system-plugin/class-gd-system-plugin-command-controller.php:61
+msgid "Cache cleared"
+msgstr "Кеш очищено"
+
+#: gd-system-plugin/class-gd-system-plugin-command-controller.php:158
+msgid "File editing enabled"
+msgstr "Редагування файлів увімкнено"
+
+#: gd-system-plugin/class-gd-system-plugin-messages.php:83
+msgid "System message"
+msgstr "Системне повідомлення"
+
+#. Plugin Name of the plugin/theme
+msgid "System Plugin"
+msgstr "Системний плагін"

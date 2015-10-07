@@ -1,0 +1,277 @@
+# Copyright (C) 2012 Limit Login Attempts
+# This file is distributed under the same license as the Limit Login Attempts package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Limit Login Attempts 1.7.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/limit-login-attempts\n"
+"POT-Creation-Date: 2012-05-20 10:43:32+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-04-07 15:54-0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: el_GR\n"
+"X-Generator: Poedit 1.6.4\n"
+
+#: limit-login-attempts.php:522
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d ώρα"
+msgstr[1] "%d ώρες"
+
+#: limit-login-attempts.php:528
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d λεπτό"
+msgstr[1] "%d λεπτά"
+
+#: limit-login-attempts.php:534
+msgid "[%s] Failed login attempts from whitelisted IP"
+msgstr "[%s] Αποτυχημένες προσπάθειες εισόδου από IP σε λευκή λίστα"
+
+#: limit-login-attempts.php:538
+msgid "[%s] Too many failed login attempts"
+msgstr "[%s] Πάρα πολλές αποτυχημένες προσπάθειες εισόδου"
+
+#: limit-login-attempts.php:543
+msgid "%d failed login attempts (%d lockout(s)) from IP: %s"
+msgstr "%d αποτυχημένες προσπάθειες εισόδου (%d αποκλεισμός/οί) από την IP: %s"
+
+#: limit-login-attempts.php:547
+msgid "Last user attempted: %s"
+msgstr "Ο τελευταίος χρήστης προσπάθησε: %s"
+
+#: limit-login-attempts.php:551
+msgid "IP was NOT blocked because of external whitelist."
+msgstr "Η IP ΔΕΝ αποκλείστηκε λόγω εξωτερικής λευκής λίστας."
+
+#: limit-login-attempts.php:553
+msgid "IP was blocked for %s"
+msgstr "Η IP αποκλείστηκε λόγω %s"
+
+#: limit-login-attempts.php:615
+msgid "<strong>ERROR</strong>: Too many failed login attempts."
+msgstr ""
+"<strong>ΣΦΑΛΜΑ: </strong> Πάρα πολλές αποτυχημένες προσπάθειες εισόδου."
+
+#: limit-login-attempts.php:619
+msgid "Please try again later."
+msgstr "Προσπαθήστε ξανά αργότερα."
+
+#: limit-login-attempts.php:626
+msgid "Please try again in %d hour."
+msgid_plural "Please try again in %d hours."
+msgstr[0] "Προσπαθήστε ξανά σε %d ώρα."
+msgstr[1] "Προσπαθήστε ξανά σε %d ώρες."
+
+#: limit-login-attempts.php:628
+msgid "Please try again in %d minute."
+msgid_plural "Please try again in %d minutes."
+msgstr[0] "Προσπαθήστε ξανά σε %d λεπτό."
+msgstr[1] "Προσπαθήστε ξανά σε %d λεπτά."
+
+#: limit-login-attempts.php:657
+msgid "<strong>%d</strong> attempt remaining."
+msgid_plural "<strong>%d</strong> attempts remaining."
+msgstr[0] "Απομένει <strong>%d</strong> προσπάθεια."
+msgstr[1] "Απομένουν <strong>%d</strong> προσπάθειες."
+
+#: limit-login-attempts.php:728
+msgid "<strong>ERROR</strong>: Incorrect username or password."
+msgstr "<strong>ΣΦΑΛΜΑ</strong>: Εσφαλμένο όνομα χρήστη ή κωδικός πρόσβασης."
+
+#: limit-login-attempts.php:896
+msgctxt "Internet address"
+msgid "IP"
+msgstr "IP"
+
+#: limit-login-attempts.php:896
+msgid "Tried to log in as"
+msgstr "Έγινε προσπάθεια εισόδου ως"
+
+#: limit-login-attempts.php:901
+msgid "%d lockout"
+msgid_plural "%d lockouts"
+msgstr[0] "%d αποκλεισμός"
+msgstr[1] "%d αποκλεισμοί"
+
+#: limit-login-attempts.php:930
+msgid "Cleared IP log"
+msgstr "Έγινε εκκαθάριση του αρχείου καταγραφής IP"
+
+#: limit-login-attempts.php:938
+msgid "Reset lockout count"
+msgstr "Επαναφορά καταμέτρησης αποκλεισμών"
+
+#: limit-login-attempts.php:946
+msgid "Cleared current lockouts"
+msgstr "Έγινε εκκαθάριση των τρεχόντων αποκλεισμών"
+
+#: limit-login-attempts.php:975
+msgid "Options changed"
+msgstr "Οι επιλογές άλλαξαν"
+
+#: limit-login-attempts.php:993
+msgid "It appears the site is reached directly (from your IP: %s)"
+msgstr ""
+"Φαίνεται ότι είναι δυνατή η απευθείας προσέγγιση του ιστότοπου (από την IP: "
+"%s)"
+
+#: limit-login-attempts.php:995
+msgid ""
+"It appears the site is reached through a proxy server (proxy IP: %s, your "
+"IP: %s)"
+msgstr ""
+"Φαίνεται ότι γίνεται προσέγγιση του ιστότοπου μέσω server μεσολάβησης (IP "
+"μεσολάβησης: %s, η δική σας IP: %s)"
+
+#: limit-login-attempts.php:1003
+msgid ""
+"<strong>Current setting appears to be invalid</strong>. Please make sure it "
+"is correct. Further information can be found <a href=\"%s\" title=\"FAQ"
+"\">here</a>"
+msgstr ""
+"<strong>Η τρέχουσα ρύθμιση φαίνεται μη έγκυρη</strong>. Βεβαιωθείτε ότι "
+"είναι σωστή. Μπορείτε να βρείτε περισσότερες πληροφορίες <a href=\"%s\" "
+"title=\"FAQ\">εδώ</a>"
+
+#: limit-login-attempts.php:1011
+msgid "Limit Login Attempts Settings"
+msgstr "Ρυθμίσεις περιορισμού προσπαθειών εισόδου"
+
+#: limit-login-attempts.php:1012
+msgid "Statistics"
+msgstr "Στατιστικά"
+
+#: limit-login-attempts.php:1017
+msgid "Total lockouts"
+msgstr "Σύνολο αποκλεισμών"
+
+#: limit-login-attempts.php:1020
+msgid "Reset Counter"
+msgstr "Επαναφορά μετρητή"
+
+#: limit-login-attempts.php:1021
+msgid "%d lockout since last reset"
+msgid_plural "%d lockouts since last reset"
+msgstr[0] "%d αποκλεισμός από τον τελευταίο μηδενισμό"
+msgstr[1] "%d αποκλεισμοί από τον τελευταίο μηδενισμό"
+
+#: limit-login-attempts.php:1022
+msgid "No lockouts yet"
+msgstr "Κανένας αποκλεισμός ακόμα"
+
+#: limit-login-attempts.php:1027
+msgid "Active lockouts"
+msgstr "Ενεργοί αποκλεισμοί"
+
+#: limit-login-attempts.php:1029
+msgid "Restore Lockouts"
+msgstr "Επαναφορά αποκλεισμών"
+
+#: limit-login-attempts.php:1030
+msgid "%d IP is currently blocked from trying to log in"
+msgstr "%d IP είναι προς το παρόν αποκλεισμένη από το να προσπαθήσει είσοδο"
+
+#: limit-login-attempts.php:1036
+msgid "Options"
+msgstr "Επιλογές"
+
+#: limit-login-attempts.php:1041
+msgid "Lockout"
+msgstr "Αποκλεισμός"
+
+#: limit-login-attempts.php:1043
+msgid "allowed retries"
+msgstr "επιτρεπόμενες προσπάθειες"
+
+#: limit-login-attempts.php:1044
+msgid "minutes lockout"
+msgstr "λεπτά αποκλεισμός"
+
+#: limit-login-attempts.php:1045
+msgid "lockouts increase lockout time to"
+msgstr "αποκλεισμοί, αύξηση χρόνου αποκλεισμού σε"
+
+#: limit-login-attempts.php:1045
+msgid "hours"
+msgstr "ώρες"
+
+#: limit-login-attempts.php:1046
+msgid "hours until retries are reset"
+msgstr "ώρες μέχρι να μηδενιστούν οι προσπάθειες"
+
+#: limit-login-attempts.php:1050
+msgid "Site connection"
+msgstr "Σύνδεση ιστότοπου"
+
+#: limit-login-attempts.php:1056
+msgid "Direct connection"
+msgstr "Απευθείας σύνδεση"
+
+#: limit-login-attempts.php:1061
+msgid "From behind a reversy proxy"
+msgstr "Από πίσω από έναν server αντίστροφης μεσολάβησης"
+
+#: limit-login-attempts.php:1067
+msgid "Handle cookie login"
+msgstr "Διαχείριση εισόδου cookie"
+
+#: limit-login-attempts.php:1069
+msgid "Yes"
+msgstr "Ναι"
+
+#: limit-login-attempts.php:1069
+msgid "No"
+msgstr "Όχι"
+
+#: limit-login-attempts.php:1073
+msgid "Notify on lockout"
+msgstr "Ενημέρωση με τον αποκλεισμό"
+
+#: limit-login-attempts.php:1075
+msgid "Log IP"
+msgstr "Καταγραφή IP"
+
+#: limit-login-attempts.php:1076
+msgid "Email to admin after"
+msgstr "Email στο διαχειριστή μετά από"
+
+#: limit-login-attempts.php:1076
+msgid "lockouts"
+msgstr "αποκλεισμούς"
+
+#: limit-login-attempts.php:1081
+msgid "Change Options"
+msgstr "Αλλαγή επιλογών"
+
+#: limit-login-attempts.php:1089
+msgid "Lockout log"
+msgstr "Αρχείο καταγραφής αποκλεισμών"
+
+#: limit-login-attempts.php:1094
+msgid "Clear Log"
+msgstr "Εκκαθάριση αρχείου καταγραφής"
+
+#. Plugin Name of the plugin/theme
+msgid "Limit Login Attempts"
+msgstr "Περιορισμός προσπαθειών εισόδου"
+
+#. Plugin URI of the plugin/theme
+msgid "http://devel.kostdoktorn.se/limit-login-attempts"
+msgstr "http://devel.kostdoktorn.se/limit-login-attempts"
+
+#. Description of the plugin/theme
+msgid "Limit rate of login attempts, including by way of cookies, for each IP."
+msgstr ""
+"Περιορισμός του ρυθμού προσπαθειών εισόδου, και μέσω cookies, για κάθε IP."
+
+#. Author of the plugin/theme
+msgid "Johan Eenfeldt"
+msgstr "Johan Eenfeldt"
+
+#. Author URI of the plugin/theme
+msgid "http://devel.kostdoktorn.se"
+msgstr "http://devel.kostdoktorn.se"

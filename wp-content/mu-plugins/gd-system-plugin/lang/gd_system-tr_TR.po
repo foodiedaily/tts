@@ -1,0 +1,108 @@
+# Copyright (C) 2014 System Plugin
+# This file is distributed under the same license as the System Plugin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: System Plugin\n"
+"POT-Creation-Date: 2014-04-02 00:39:56+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-04-07 16:08-0800\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr_TR\n"
+"X-Generator: Poedit 1.6.4\n"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:71
+msgid "Flush Cache"
+msgstr "Önbelleği Temizle"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:79
+msgid "GoDaddy Settings"
+msgstr "GoDaddy Ayarları"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:81
+msgid "Account Settings"
+msgstr "Hesap Ayarları"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:147
+msgid ""
+"For your security, we’ve disabled WordPress’ built-in file editor by default."
+msgstr ""
+"Güvenliğiniz için WordPress yerleşik dosya düzenleyicisini varsayılan olarak "
+"devre dışı bıraktık."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:148
+msgid "If you enable editing, all plugin and theme files become editable."
+msgstr ""
+"Düzenlemeyi etkinleştirirseniz, tüm eklenti ve tema dosyaları düzenlenebilir "
+"hale gelir."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:149
+msgid "Enable Editing"
+msgstr "Düzenlemeyi Etkinleştir"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:161
+msgid "File editing is not enabled on this site"
+msgstr "Bu sitede dosya düzenleme etkin değildir"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:189
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:212
+msgid "Sorry, but you have to <a href=\"%s\">change your domain name here</a>."
+msgstr "Maalesef <a href=\"%s\">burada alan adınızı değiştirmeniz</a> gerekir."
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:71
+msgid "Unknown verb: %s. Try GET or POST"
+msgstr "Bilinmeyen fiil: %s. AL ya da PAYLAŞ fiillerini deneyin"
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:106
+msgid "API returned bad status: %d: %s"
+msgstr "API hatalı duruma geçti: %d: %s"
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:80
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:95
+msgid "Not available"
+msgstr "Yok"
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:81
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:96
+msgid ""
+"This plugin is not allowed on our system due to performance, security, or "
+"compatibility concerns. Please contact our support with any questions."
+msgstr ""
+"Performans, güvenlik ya da uyumluluk endişeleri nedeniyle bu eklentiye "
+"sisteminizde izin verilmiyor. Lütfen her türlü soru için destek ekibimizle "
+"iletişime geçin."
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:117
+msgid ""
+"This plugin %s is not allowed on our system. It has been automatically "
+"deactivated."
+msgstr ""
+"Bu eklentiye %s sisteminizde izin verilmiyor. Otomatik olarak devre dışı "
+"bırakıldı."
+
+#: gd-system-plugin/class-gd-system-plugin-cname.php:126
+msgid ""
+"<strong>Note:</strong> You're using the temporary domain <strong>%s</"
+"strong>. <a href=\"%s\" target=\"_blank\">Change domain</a>"
+msgstr ""
+"<strong>Not:</strong> Geçici alan adı kullanıyorsunuz <strong>%s</strong>. "
+"<a href=\"%s\" target=\"_blank\">Alan adını değiştir</a>"
+
+#: gd-system-plugin/class-gd-system-plugin-command-controller.php:61
+msgid "Cache cleared"
+msgstr "Önbellek temizlendi"
+
+#: gd-system-plugin/class-gd-system-plugin-command-controller.php:158
+msgid "File editing enabled"
+msgstr "Dosya düzenleme etkinleştirildi"
+
+#: gd-system-plugin/class-gd-system-plugin-messages.php:83
+msgid "System message"
+msgstr "Sistem mesajı"
+
+#. Plugin Name of the plugin/theme
+msgid "System Plugin"
+msgstr "Sistem Eklentisi"

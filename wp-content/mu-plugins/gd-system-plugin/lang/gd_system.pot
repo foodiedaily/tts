@@ -1,0 +1,103 @@
+# Copyright (C) 2014 System Plugin
+# This file is distributed under the same license as the System Plugin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: System Plugin \n"
+"plugin\n"
+"POT-Creation-Date: 2014-12-15 20:40:43+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:75
+msgid "Flush Cache"
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:86
+msgid "GoDaddy Settings"
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:88
+msgid "Account Settings"
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:148
+msgid "UserVoice"
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:151
+msgid "Hide the UserVoice feedback button from the Dashboard"
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:203
+msgid ""
+"For your security, we’ve disabled WordPress’ built-in file editor by default."
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:204
+msgid "If you enable editing, all plugin and theme files become editable."
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:205
+msgid "Enable Editing"
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:217
+msgid "File editing is not enabled on this site"
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:247
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:272
+msgid "Sorry, but you have to <a href=\"%s\">change your domain name here</a>."
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:71
+msgid "Unknown verb: %s. Try GET or POST"
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:106
+msgid "API returned bad status: %d: %s"
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:80
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:95
+msgid "Not available"
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:81
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:96
+msgid ""
+"This plugin is not allowed on our system due to performance, security, or "
+"compatibility concerns. Please contact our support with any questions."
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:117
+msgid ""
+"This plugin %s is not allowed on our system. It has been automatically "
+"deactivated."
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-cache-purge.php:261
+#: gd-system-plugin/class-gd-system-plugin-command-controller.php:65
+msgid "Cache cleared"
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-cname.php:127
+msgid ""
+"<strong>Note:</strong> You're using the temporary domain <strong>%s</"
+"strong>. <a href=\"%s\" target=\"_blank\">Change domain</a>"
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-command-controller.php:162
+msgid "File editing enabled"
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-messages.php:83
+msgid "System message"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "System Plugin"
+msgstr ""

@@ -1,0 +1,113 @@
+# Copyright (C) 2014 System Plugin
+# This file is distributed under the same license as the System Plugin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: System Plugin\n"
+"POT-Creation-Date: 2014-04-02 00:39:56+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-04-07 16:07-0800\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"X-Generator: Poedit 1.6.4\n"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:71
+msgid "Flush Cache"
+msgstr "Очистка кэш-памяти"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:79
+msgid "GoDaddy Settings"
+msgstr "Настройки GoDaddy"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:81
+msgid "Account Settings"
+msgstr "Настройки аккаунта"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:147
+msgid ""
+"For your security, we’ve disabled WordPress’ built-in file editor by default."
+msgstr ""
+"Для обеспечения безопасности мы отключили функцию WordPress, встроенную в "
+"редактор файлов по умолчанию."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:148
+msgid "If you enable editing, all plugin and theme files become editable."
+msgstr ""
+"Если включить функцию редактирования, все файлы плагинов и тем будут "
+"доступны для изменения."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:149
+msgid "Enable Editing"
+msgstr "Включить редактирование"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:161
+msgid "File editing is not enabled on this site"
+msgstr "Функция редактирование файлов не включена на этом веб-сайте"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:189
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:212
+msgid "Sorry, but you have to <a href=\"%s\">change your domain name here</a>."
+msgstr ""
+"Извините, но вы должны изменить<a href=\"%s\">имя вашего домена здесь</a>."
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:71
+msgid "Unknown verb: %s. Try GET or POST"
+msgstr ""
+"Неизвестный глагол: %s. Попробуйте использовать GET (ПОЛУЧИТЬ) или POST "
+"(ОПУБЛИКОВАТЬ)"
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:106
+msgid "API returned bad status: %d: %s"
+msgstr ""
+"Интерфейс прикладной программы сообщил о некорректном состоянии: %d: %s"
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:80
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:95
+msgid "Not available"
+msgstr "Недоступно"
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:81
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:96
+msgid ""
+"This plugin is not allowed on our system due to performance, security, or "
+"compatibility concerns. Please contact our support with any questions."
+msgstr ""
+"Использование этого плагина запрещено в нашей системе по соображениям "
+"производительности, безопасности или совместимости Пожалуйста, обратитесь в "
+"нашу службу поддержки."
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:117
+msgid ""
+"This plugin %s is not allowed on our system. It has been automatically "
+"deactivated."
+msgstr ""
+"Использование этого плагина %s запрещено в нашей системе. Он был "
+"автоматически отключен."
+
+#: gd-system-plugin/class-gd-system-plugin-cname.php:126
+msgid ""
+"<strong>Note:</strong> You're using the temporary domain <strong>%s</"
+"strong>. <a href=\"%s\" target=\"_blank\">Change domain</a>"
+msgstr ""
+"<strong>Примечание. </strong>Вы используете временный домен <strong>%s</"
+"strong>. <a href=\"%s\" target=\"_blank\">Измените домен</a>"
+
+#: gd-system-plugin/class-gd-system-plugin-command-controller.php:61
+msgid "Cache cleared"
+msgstr "Кэш-память очищена"
+
+#: gd-system-plugin/class-gd-system-plugin-command-controller.php:158
+msgid "File editing enabled"
+msgstr "Функция редактирования файлов включена"
+
+#: gd-system-plugin/class-gd-system-plugin-messages.php:83
+msgid "System message"
+msgstr "Системное сообщение"
+
+#. Plugin Name of the plugin/theme
+msgid "System Plugin"
+msgstr "Плагин системы"

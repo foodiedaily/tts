@@ -1,0 +1,109 @@
+# Copyright (C) 2014 System Plugin
+# This file is distributed under the same license as the System Plugin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: System Plugin\n"
+"POT-Creation-Date: 2014-04-02 00:39:56+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-04-07 16:06-0800\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_PT\n"
+"X-Generator: Poedit 1.6.4\n"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:71
+msgid "Flush Cache"
+msgstr "Libertar cache"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:79
+msgid "GoDaddy Settings"
+msgstr "Definições da GoDaddy"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:81
+msgid "Account Settings"
+msgstr "Definições da conta"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:147
+msgid ""
+"For your security, we’ve disabled WordPress’ built-in file editor by default."
+msgstr ""
+"Para sua segurança, desativámos o editor de ficheiros nativo do WordPress "
+"por predefinição."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:148
+msgid "If you enable editing, all plugin and theme files become editable."
+msgstr ""
+"Se ativar a edição, todos os suplementos e ficheiros de temas passam a ser "
+"passíveis de edição."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:149
+msgid "Enable Editing"
+msgstr "Ativar a edição"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:161
+msgid "File editing is not enabled on this site"
+msgstr "A edição de ficheiros não está ativada neste sítio da internet"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:189
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:212
+msgid "Sorry, but you have to <a href=\"%s\">change your domain name here</a>."
+msgstr ""
+"Lamentamos, mas deve <a href=\"%s\">alterar o seu nome de domínio aqui</a>."
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:71
+msgid "Unknown verb: %s. Try GET or POST"
+msgstr "Verbo desconhecido: %s. Tente GET ou POST"
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:106
+msgid "API returned bad status: %d: %s"
+msgstr "O API devolveu um estado inválido: %d: %s"
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:80
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:95
+msgid "Not available"
+msgstr "Indisponível"
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:81
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:96
+msgid ""
+"This plugin is not allowed on our system due to performance, security, or "
+"compatibility concerns. Please contact our support with any questions."
+msgstr ""
+"Este suplemento não é permitido no nosso sistema por questões de desempenho, "
+"segurança ou compatibilidade. Entre em contacto com a assistência em caso de "
+"dúvidas."
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:117
+msgid ""
+"This plugin %s is not allowed on our system. It has been automatically "
+"deactivated."
+msgstr ""
+"Este suplemento %s não é permitido no nosso sistema. Foi desativado "
+"automaticamente."
+
+#: gd-system-plugin/class-gd-system-plugin-cname.php:126
+msgid ""
+"<strong>Note:</strong> You're using the temporary domain <strong>%s</"
+"strong>. <a href=\"%s\" target=\"_blank\">Change domain</a>"
+msgstr ""
+"<strong>Nota:</strong> Está a usar um domínio temporário <strong>%s</"
+"strong>. <a href=\"%s\" target=\"_blank\">Alterar domínio</a>"
+
+#: gd-system-plugin/class-gd-system-plugin-command-controller.php:61
+msgid "Cache cleared"
+msgstr "Cache limpa"
+
+#: gd-system-plugin/class-gd-system-plugin-command-controller.php:158
+msgid "File editing enabled"
+msgstr "Edição de ficheiro ativa"
+
+#: gd-system-plugin/class-gd-system-plugin-messages.php:83
+msgid "System message"
+msgstr "Mensagem do sistema"
+
+#. Plugin Name of the plugin/theme
+msgid "System Plugin"
+msgstr "Suplemento do sistema"

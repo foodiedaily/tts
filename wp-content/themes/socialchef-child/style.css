@@ -1,0 +1,59 @@
+/*
+ Theme Name:     SocialChef Child
+ Theme URI:      http://themeforest.net/item/socialchef-social-recipe-wordpress-theme/
+ Description:    SocialChef Theme
+ Author:         themeenergy
+ Author URI:     http://themeenergy.com/
+ Template:       SocialChef
+ Version:        1.0.0
+*/
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+body {
+/*	background: url(../images/body2.jpg) 0 0 repeat;*/
+    background-image: url(http://localhost:8888/wp-content/themes/socialchef-child/images/body2.jpg);
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: initial;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+/*    background-color: rgb(222, 206, 185);*/
+
+}
+.icons .ico {
+	color: #8b8886
+}
+
+/*-------------landing page styles ------------ */
+.intro .row > div:last-of-type {
+	width: 75%;
+	text-align: left;
+}
+
+
+header.head {
+    position: absolute;
+    top: -100px;
+    transition: top 2s;
+}
+
+/*transition: <property> <duration> <timing-function> <delay>;*/
+
+.head-drop-in {
+	top: 0px;
+}
+
+
+
+
+
+
+
+
+
+

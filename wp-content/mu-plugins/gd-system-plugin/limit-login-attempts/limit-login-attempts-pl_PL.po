@@ -1,0 +1,285 @@
+# Copyright (C) 2012 Limit Login Attempts
+# This file is distributed under the same license as the Limit Login Attempts package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Limit Login Attempts 1.7.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/limit-login-attempts\n"
+"POT-Creation-Date: 2012-05-20 10:43:32+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-04-07 15:55-0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"Language: pl_PL\n"
+"X-Generator: Poedit 1.6.4\n"
+
+#: limit-login-attempts.php:522
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d godz."
+msgstr[1] "%d godz."
+msgstr[2] "%d godz."
+
+#: limit-login-attempts.php:528
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d min"
+msgstr[1] "%d min"
+msgstr[2] "%d min"
+
+#: limit-login-attempts.php:534
+msgid "[%s] Failed login attempts from whitelisted IP"
+msgstr "[%s] Nieudane próby logowania z IP z białej listy"
+
+#: limit-login-attempts.php:538
+msgid "[%s] Too many failed login attempts"
+msgstr "[%s] Zbyt wiele nieudanych prób logowania"
+
+#: limit-login-attempts.php:543
+msgid "%d failed login attempts (%d lockout(s)) from IP: %s"
+msgstr "Nieudane próby logowania: %d (%d blokad(y) z IP: %s)"
+
+#: limit-login-attempts.php:547
+msgid "Last user attempted: %s"
+msgstr "Ostatni użytkownik, który podjął próbę: %s"
+
+#: limit-login-attempts.php:551
+msgid "IP was NOT blocked because of external whitelist."
+msgstr "Adres IP nie został zablokowany ze względu na zewnętrzną białą listę."
+
+#: limit-login-attempts.php:553
+msgid "IP was blocked for %s"
+msgstr "Adres IP dla: %s został zablokowany"
+
+#: limit-login-attempts.php:615
+msgid "<strong>ERROR</strong>: Too many failed login attempts."
+msgstr "<strong>BŁĄD</strong>: zbyt wiele nieudanych prób logowania."
+
+#: limit-login-attempts.php:619
+msgid "Please try again later."
+msgstr "Spróbuj ponownie później."
+
+#: limit-login-attempts.php:626
+msgid "Please try again in %d hour."
+msgid_plural "Please try again in %d hours."
+msgstr[0] "Spróbuj ponownie za %d godz."
+msgstr[1] "Spróbuj ponownie za %d godz."
+msgstr[2] "Spróbuj ponownie za %d godz."
+
+#: limit-login-attempts.php:628
+msgid "Please try again in %d minute."
+msgid_plural "Please try again in %d minutes."
+msgstr[0] "Spróbuj ponownie za %d min."
+msgstr[1] "Spróbuj ponownie za %d min."
+msgstr[2] "Spróbuj ponownie za %d min."
+
+#: limit-login-attempts.php:657
+msgid "<strong>%d</strong> attempt remaining."
+msgid_plural "<strong>%d</strong> attempts remaining."
+msgstr[0] "Pozostałe próby: <strong>%d</strong>."
+msgstr[1] "Pozostałe próby: <strong>%d</strong>."
+msgstr[2] "Pozostałe próby: <strong>%d</strong>."
+
+#: limit-login-attempts.php:728
+msgid "<strong>ERROR</strong>: Incorrect username or password."
+msgstr "<strong>BŁĄD</strong>: nieprawidłowa nazwa użytkownika lub hasło."
+
+#: limit-login-attempts.php:896
+msgctxt "Internet address"
+msgid "IP"
+msgstr "Adres IP"
+
+#: limit-login-attempts.php:896
+msgid "Tried to log in as"
+msgstr "Próba zalogowania jako"
+
+#: limit-login-attempts.php:901
+msgid "%d lockout"
+msgid_plural "%d lockouts"
+msgstr[0] "Blokady: %d"
+msgstr[1] "Blokady: %d"
+msgstr[2] "Blokady: %d"
+
+#: limit-login-attempts.php:930
+msgid "Cleared IP log"
+msgstr "Dziennik IP został wyczyszczony"
+
+#: limit-login-attempts.php:938
+msgid "Reset lockout count"
+msgstr "Zresetuj licznik blokad"
+
+#: limit-login-attempts.php:946
+msgid "Cleared current lockouts"
+msgstr "Aktualne blokady zostały zdjęte"
+
+#: limit-login-attempts.php:975
+msgid "Options changed"
+msgstr "Opcje zostały zmienione"
+
+#: limit-login-attempts.php:993
+msgid "It appears the site is reached directly (from your IP: %s)"
+msgstr ""
+"Wygląda na to, że witryna jest otwierana bezpośrednio (z Twojego adresu IP: "
+"%s)"
+
+#: limit-login-attempts.php:995
+msgid ""
+"It appears the site is reached through a proxy server (proxy IP: %s, your "
+"IP: %s)"
+msgstr ""
+"Wygląda na to, że witryna jest otwierana przez serwer proxy (adres IP proxy: "
+"%s, Twój adres IP: %s)"
+
+#: limit-login-attempts.php:1003
+msgid ""
+"<strong>Current setting appears to be invalid</strong>. Please make sure it "
+"is correct. Further information can be found <a href=\"%s\" title=\"FAQ"
+"\">here</a>"
+msgstr ""
+"<strong>Bieżące ustawienia wyglądają na nieprawidłowe</strong>. Sprawdź ich "
+"poprawność. Więcej informacji znajdziesz <a href=\"%s\" title=\"FAQ\">tutaj</"
+"a>"
+
+#: limit-login-attempts.php:1011
+msgid "Limit Login Attempts Settings"
+msgstr "Ustawienia limitów prób logowania"
+
+#: limit-login-attempts.php:1012
+msgid "Statistics"
+msgstr "Statystyki"
+
+#: limit-login-attempts.php:1017
+msgid "Total lockouts"
+msgstr "Blokady ogółem"
+
+#: limit-login-attempts.php:1020
+msgid "Reset Counter"
+msgstr "Zresetuj licznik"
+
+#: limit-login-attempts.php:1021
+msgid "%d lockout since last reset"
+msgid_plural "%d lockouts since last reset"
+msgstr[0] "Blokady od ostatniego zresetowania: %d"
+msgstr[1] "Blokady od ostatniego zresetowania: %d"
+msgstr[2] "Blokady od ostatniego zresetowania: %d"
+
+#: limit-login-attempts.php:1022
+msgid "No lockouts yet"
+msgstr "Nie było jeszcze żadnych blokad"
+
+#: limit-login-attempts.php:1027
+msgid "Active lockouts"
+msgstr "Aktywne blokady"
+
+#: limit-login-attempts.php:1029
+msgid "Restore Lockouts"
+msgstr "Przywróć blokady"
+
+#: limit-login-attempts.php:1030
+msgid "%d IP is currently blocked from trying to log in"
+msgstr "Próby logowania przez adres IP %d są obecnie blokowane"
+
+#: limit-login-attempts.php:1036
+msgid "Options"
+msgstr "Opcje"
+
+#: limit-login-attempts.php:1041
+msgid "Lockout"
+msgstr "Blokada"
+
+#: limit-login-attempts.php:1043
+msgid "allowed retries"
+msgstr "dozwolone próby"
+
+#: limit-login-attempts.php:1044
+msgid "minutes lockout"
+msgstr "min blokady"
+
+#: limit-login-attempts.php:1045
+msgid "lockouts increase lockout time to"
+msgstr "blokady wydłuż czas blokady do"
+
+#: limit-login-attempts.php:1045
+msgid "hours"
+msgstr "godz."
+
+#: limit-login-attempts.php:1046
+msgid "hours until retries are reset"
+msgstr "godz. do momentu zresetowania prób"
+
+#: limit-login-attempts.php:1050
+msgid "Site connection"
+msgstr "Połączenie z witryną"
+
+#: limit-login-attempts.php:1056
+msgid "Direct connection"
+msgstr "Połączenie bezpośrednie"
+
+#: limit-login-attempts.php:1061
+msgid "From behind a reversy proxy"
+msgstr "Zza odwrotnego proxy"
+
+#: limit-login-attempts.php:1067
+msgid "Handle cookie login"
+msgstr "Obsługuj logowanie przez plik cookie"
+
+#: limit-login-attempts.php:1069
+msgid "Yes"
+msgstr "Tak"
+
+#: limit-login-attempts.php:1069
+msgid "No"
+msgstr "Nie"
+
+#: limit-login-attempts.php:1073
+msgid "Notify on lockout"
+msgstr "Powiadamiaj o blokadzie"
+
+#: limit-login-attempts.php:1075
+msgid "Log IP"
+msgstr "Rejestruj adres IP"
+
+#: limit-login-attempts.php:1076
+msgid "Email to admin after"
+msgstr "Wyślij wiadomość do administratora po"
+
+#: limit-login-attempts.php:1076
+msgid "lockouts"
+msgstr "blokadach"
+
+#: limit-login-attempts.php:1081
+msgid "Change Options"
+msgstr "Zmień opcje"
+
+#: limit-login-attempts.php:1089
+msgid "Lockout log"
+msgstr "Dziennik blokad"
+
+#: limit-login-attempts.php:1094
+msgid "Clear Log"
+msgstr "Wyczyść dziennik"
+
+#. Plugin Name of the plugin/theme
+msgid "Limit Login Attempts"
+msgstr "Określ limit prób logowania"
+
+#. Plugin URI of the plugin/theme
+msgid "http://devel.kostdoktorn.se/limit-login-attempts"
+msgstr "http://devel.kostdoktorn.se/limit-login-attempts"
+
+#. Description of the plugin/theme
+msgid "Limit rate of login attempts, including by way of cookies, for each IP."
+msgstr ""
+"Określi limit prób logowania, w tym przy użyciu plików cookie, dla każdego "
+"adresu IP."
+
+#. Author of the plugin/theme
+msgid "Johan Eenfeldt"
+msgstr "Johan Eenfeldt"
+
+#. Author URI of the plugin/theme
+msgid "http://devel.kostdoktorn.se"
+msgstr "http://devel.kostdoktorn.se"

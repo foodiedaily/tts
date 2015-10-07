@@ -1,0 +1,109 @@
+# Copyright (C) 2014 System Plugin
+# This file is distributed under the same license as the System Plugin package.
+msgid ""
+msgstr ""
+"Project-Id-Version: System Plugin\n"
+"POT-Creation-Date: 2014-04-02 00:39:56+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-04-07 16:02-0800\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: el_GR\n"
+"X-Generator: Poedit 1.6.4\n"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:71
+msgid "Flush Cache"
+msgstr "Εκκαθάριση cache"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:79
+msgid "GoDaddy Settings"
+msgstr "Ρυθμίσεις GoDaddy"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:81
+msgid "Account Settings"
+msgstr "Ρυθμίσεις λογαριασμού"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:147
+msgid ""
+"For your security, we’ve disabled WordPress’ built-in file editor by default."
+msgstr ""
+"Για τη δική σας ασφάλεια, απενεργοποιήσαμε ως προεπιλογή την ενσωματωμένη "
+"στο WordPress εφαρμογή επεξεργασίας αρχείων."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:148
+msgid "If you enable editing, all plugin and theme files become editable."
+msgstr ""
+"Αν ενεργοποιήσετε την επεξεργασία, όλα τα αρχεία plugin και θεμάτων θα "
+"αποκτήσουν τη δυνατότητα επεξεργασίας."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:149
+msgid "Enable Editing"
+msgstr "Ενεργοποίηση επεξεργασίας"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:161
+msgid "File editing is not enabled on this site"
+msgstr "Η επεξεργασία αρχείων δεν είναι ενεργοποιημένη για αυτό τον ιστότοπο"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:189
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:212
+msgid "Sorry, but you have to <a href=\"%s\">change your domain name here</a>."
+msgstr ""
+"Λυπούμαστε, αλλά πρέπει να <a href=\"%s\">αλλάξετε το όνομα τομέα σας εδώ</"
+"a>."
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:71
+msgid "Unknown verb: %s. Try GET or POST"
+msgstr "Άγνωστο ρήμα: %s. Δοκιμάστε με μέθοδο GET ή POST"
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:106
+msgid "API returned bad status: %d: %s"
+msgstr "Το API επέστρεψε ακατάλληλη κατάσταση: %d: %s"
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:80
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:95
+msgid "Not available"
+msgstr "Μη διαθέσιμο"
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:81
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:96
+msgid ""
+"This plugin is not allowed on our system due to performance, security, or "
+"compatibility concerns. Please contact our support with any questions."
+msgstr ""
+"Αυτό το plugin δεν επιτρέπεται στο σύστημά μας, λόγω θεμάτων απόδοσης, "
+"ασφαλείας ή συμβατότητας. Αν έχετε οποιεσδήποτε απορίες, επικοινωνήστε με "
+"την υποστήριξή μας."
+
+#: gd-system-plugin/class-gd-system-plugin-blacklist.php:117
+msgid ""
+"This plugin %s is not allowed on our system. It has been automatically "
+"deactivated."
+msgstr ""
+"Αυτό το plugin %s δεν επιτρέπεται στο σύστημά μας. Απενεργοποιήθηκε αυτόματα."
+
+#: gd-system-plugin/class-gd-system-plugin-cname.php:126
+msgid ""
+"<strong>Note:</strong> You're using the temporary domain <strong>%s</"
+"strong>. <a href=\"%s\" target=\"_blank\">Change domain</a>"
+msgstr ""
+"<strong>Σημείωση:</strong> Χρησιμοποιείτε τον προσωρινό τομέα <strong>%s</"
+"strong>. <a href=\"%s\" target=\"_blank\">Αλλάξτε τομέα</a>"
+
+#: gd-system-plugin/class-gd-system-plugin-command-controller.php:61
+msgid "Cache cleared"
+msgstr "Έγινε εκκαθάριση της cache"
+
+#: gd-system-plugin/class-gd-system-plugin-command-controller.php:158
+msgid "File editing enabled"
+msgstr "Η επεξεργασία αρχείων ενεργοποιήθηκε"
+
+#: gd-system-plugin/class-gd-system-plugin-messages.php:83
+msgid "System message"
+msgstr "Μήνυμα συστήματος"
+
+#. Plugin Name of the plugin/theme
+msgid "System Plugin"
+msgstr "Plugin συστήματος"
