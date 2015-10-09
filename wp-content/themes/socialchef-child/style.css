@@ -10,10 +10,22 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700italic,700|Lato:400,100,100italic,300,300italic,400italic,700,700italic);
+
+.verticalCenter {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h2.large {
+    font-weight: 300;
+}
 
 body {
-/*	background: url(../images/body2.jpg) 0 0 repeat;*/
-    background-image: url(http://localhost:8888/wp-content/themes/socialchef-child/images/body2.jpg);
+    /*background: url(http://tts.dev/wp-content/uploads/2015/10/body2.png) 0 0 repeat;
+    background-image: url(http://tts.dev/wp-content/uploads/2015/10/body2.png);*/
+    background:none;
     background-position-x: 0px;
     background-position-y: 0px;
     background-size: initial;
@@ -22,33 +34,78 @@ body {
     background-attachment: fixed;
     background-origin: initial;
     background-clip: initial;
-/*    background-color: rgb(222, 206, 185);*/
+
+    font-family: 'Lato',Open Sans,sans-serif;
 
 }
+
 .icons .ico {
-	color: #8b8886
+	/*color: #8b8886;*/
+    color: #c5aa83;
+}
+
+.main .wrap {
+    width: 1366px;
 }
 
 /*-------------landing page styles ------------ */
+
+
 .intro .row > div:last-of-type {
 	width: 75%;
 	text-align: left;
 }
 
+#socialchef_home_intro_widget-2{
+    margin-top: 10%;
+}
 
-header.head {
+#socialchef_home_intro_widget-2 h2 {
+    font-weight: 100;
+   /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;*/
+    text-shadow: 1px 1px 14px #000000;
+}
+
+#socialchef_home_intro_widget-2 p {
+    font-size: 24px;
+    font-weight: 100;
+    text-shadow: 1px 1px 6px #000000;
+}
+
+/*header.head {
+    background: rgba(255,255,255,0.75);
+}*/
+
+.head .wrap {
+    min-width: 100%;
+    max-width: 100%;
+    /*background: rgba(255,255,255,0.8);*/
+    background: rgba(197, 170, 131, 0.5);
+}
+
+.page-template-sc_home-php .head {
+position: fixed;
+}
+
+/*.stickyHeader {
     position: absolute;
     top: -100px;
-    transition: top 2s;
-}
+    transition: top 0.5s ease;
+
+}*/
+
+/*.headerHide {
+    position: absolute;
+    top: -100px;
+    transition: top 0.5s ease;
+}*/
 
 /*transition: <property> <duration> <timing-function> <delay>;*/
 
-.head-drop-in {
+/*.headerShow {
 	top: 0px;
-}
-
-
+    position: fixed;
+}*/
 
 
 

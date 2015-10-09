@@ -1,19 +1,26 @@
+(function($) {
+	$(document).ready(function(){
 
-jQuery(document).ready(function(){
+	// $(window).scroll(function() {    
+ //    var scroll = $(".head").scrollTop();    
+ //    if (scroll < 10) {
+ //        $(".stickyHeader").addClass("headerShow");
+ //        // $(".stickyHeader").removeClass("headerHide");
+ //    }else{
+ //    	// $(".stickyHeader").addClass("headerHide");
+ //    	$(".stickyHeader").removeClass("headShow");
+ //    }
 
-console.log ('working');
+// $(window).scroll(function() {
+// if ($(this).scrollTop() > 1){  
+//     $('.stickyHeader').addClass("sticky");
+//   }
+//   else{
+//     $('.stickyHeader').removeClass("sticky");
+//   }
+// });
 
-jQuery(window).scroll(function(){
-    if (jQuery(window).scrollTop() > 10){
-    	console.log ('scroll');
-        jQuery('.head').addClass('head-drop-in');
-    }else{
-    	jQuery('.head').removeClass('head-drop-in');
-    }
- });
 
-jQuery(body).click(function(){
-	jQuery('.head').addClass('head-drop-in');
 });
-
-});
+	});
+})(jQuery);
