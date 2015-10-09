@@ -80,7 +80,8 @@ body {
     background: rgba(255,255,255,0.5);
 }
 
-.page-template-sc_home-php .head {
+.page-template .head {
+
 position: fixed;
 }
 
