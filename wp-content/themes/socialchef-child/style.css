@@ -72,15 +72,12 @@ body {
     text-shadow: 1px 1px 6px #000000;
 }
 
-/*header.head {
-    background: rgba(255,255,255,0.75);
-}*/
 
 .head .wrap {
     min-width: 100%;
     max-width: 100%;
-    /*background: rgba(255,255,255,0.8);*/
-    background: rgba(197, 170, 131, 0.5);
+    /*background: rgba(197,170,131,0.5);*/
+    background: rgba(255,255,255,0.5);
 }
 
 .page-template-sc_home-php .head {
