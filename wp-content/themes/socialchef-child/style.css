@@ -11,6 +11,7 @@
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700italic,700|Lato:400,100,100italic,300,300italic,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 
 .verticalCenter {
   position: relative;
@@ -19,6 +20,11 @@
 }
 
 h2.large {
+    font-weight: 300;
+}
+
+.open-sans-condensed {
+    font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
 }
 
