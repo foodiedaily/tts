@@ -8,7 +8,7 @@
 		function headerShow(){
 			if (!$("body").hasClass("home-page")) {
 				$(this).children("#headID").removeClass("headHide");
-				$(this).find("#headID").addClass("headShow");
+				$(this).children("#headID").addClass("headShow");
 			}
 		};
 		headerShow();	
