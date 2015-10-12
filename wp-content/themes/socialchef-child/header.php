@@ -59,7 +59,7 @@
 	<?php do_action( 'bp_before_header' ); ?>
 	<!--header-->
 	<!-- <div class="stickyHeader"> -->
-	<header id="headID" class="head headHide" role="banner">
+	<header id="headID" class="head" role="banner">
 		<!--wrap-->
 		<div class="wrap clearfix">
 			<a href="<?php echo esc_url ( home_url('/') ); ?>" title="<?php _e( 'Home', 'socialchef' ); ?>" class="logo"><img src="<?php echo esc_url ( $sc_theme_globals->get_theme_logo_src() ); ?>" alt="<?php _e('SocialChef.com', 'socialchef'); ?>" /></a>

@@ -58,7 +58,7 @@ body {
     width: 1366px;
 }
 
-/*-------------landing page styles ------------ */
+/*------------- landing page styles ------------ */
 
 
 .intro .row > div:last-of-type {
@@ -86,6 +86,7 @@ body {
     margin-top: -55px;
 }
 
+/*------------- header styles ------------ */
 
 .head .wrap {
     min-width: 100%;
@@ -112,7 +113,7 @@ body {
 
 
 
-/*--------woocommerce syles----------*/
+/*------------- shop syles ------------ */
 
 .attachment-shop_single.wp-post-image {
     border: 1px solid #DDD;
