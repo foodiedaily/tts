@@ -28,6 +28,10 @@ h2.large {
     font-weight: 300;
 }
 
+.button.scroll-to-top {
+    display: none;
+}
+
 body {
     /*background: url(http://tts.dev/wp-content/uploads/2015/10/body2.png) 0 0 repeat;
     background-image: url(http://tts.dev/wp-content/uploads/2015/10/body2.png);*/
@@ -58,61 +62,61 @@ body {
 
 
 .intro .row > div:last-of-type {
-	width: 75%;
-	text-align: left;
+	width: 100%;
+	text-align: center;
 }
 
-#socialchef_home_intro_widget-2{
-    margin-top: 10%;
+.page-template-sc_home .intro .wrap {
+    margin-top: 20px;
 }
 
-#socialchef_home_intro_widget-2 h2 {
+#socialchef_home_intro_widget-2.socialchef_home_intro_widget .three-fourth text>h1 {
     font-weight: 100;
    /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;*/
     text-shadow: 1px 1px 14px #000000;
+    padding-bottom: 0; 
 }
 
 #socialchef_home_intro_widget-2 p {
     font-size: 24px;
     font-weight: 100;
     text-shadow: 1px 1px 6px #000000;
+    max-width: 100%;
+    text-align: center;
+    margin-top: -55px;
 }
 
 
 .head .wrap {
     min-width: 100%;
     max-width: 100%;
-    /*background: rgba(197,170,131,0.5);*/
-    background: rgba(255,255,255,0.5);
+/*    background: rgba(197,170,131,0.5);*/
+    background: rgba(255,255,255,0.9);
 }
 
-.page-template .head {
-
-position: fixed;
+#headID {
+    position: fixed;
+    z-index: 200;
 }
-
-/*.stickyHeader {
-    position: absolute;
-    top: -100px;
-    transition: top 0.5s ease;
-
-}*/
-
-/*.headerHide {
-    position: absolute;
-    top: -100px;
-    transition: top 0.5s ease;
-}*/
 
 /*transition: <property> <duration> <timing-function> <delay>;*/
+.headHide {
+    top: -100px;
+    transition: top 1.5s ease;
+}
 
-/*.headerShow {
-	top: 0px;
-    position: fixed;
-}*/
+.headShow {
+    top: 0px;
+    transition: top 1.5s ease;
+}
 
 
 
+/*--------woocommerce syles----------*/
+
+.attachment-shop_single.wp-post-image {
+    border: 1px solid #DDD;
+}
 
 
 
