@@ -29,8 +29,8 @@
 				<section class="content full-width">
 					<div class="icons dynamic-numbers">
 						<header class="s-title">
-					<!-- 		<h2 class="ribbon large"><span class="open-sans-condensed">TASTE TOUT SHOUT</span>in numbers</h2> -->
-							<h2 class="ribbon large"><?php echo sprintf(__('%s in numbers', 'socialchef'), get_bloginfo('name')); ?></h2>
+							<h2 class="ribbon large">TASTE TOUT SHOUT in numbers</h2>
+							<!-- <h2 class="ribbon large"><?php echo sprintf(__('%s in numbers', 'socialchef'), get_bloginfo('name')); ?></h2> -->
 						</header>
 
 						<!--row-->

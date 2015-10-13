@@ -18,15 +18,5 @@ function my_scripts_method() {
 
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 
- /*
-<?php if(is_home() ) {
 
-//do special header stuff
-
-} else {
-
-//do regular header stuff
-
-} ?>
-*/
 

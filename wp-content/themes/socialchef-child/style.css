@@ -67,7 +67,7 @@ body {
 }
 
 .page-template-sc_home .intro .wrap {
-    margin-top: 20px;
+    margin-top: 10%;
 }
 
 #socialchef_home_intro_widget-2.socialchef_home_intro_widget .three-fourth text>h1 {
@@ -77,13 +77,13 @@ body {
     padding-bottom: 0; 
 }
 
-#socialchef_home_intro_widget-2 p {
+#socialchef_home_intro_widget-3 p {
     font-size: 24px;
     font-weight: 100;
     text-shadow: 1px 1px 6px #000000;
     max-width: 100%;
     text-align: center;
-    margin-top: -55px;
+    margin: -55px 10% 0;
 }
 
 /*------------- header styles ------------ */
@@ -106,12 +106,18 @@ body {
     transition: top 1.5s ease;
 }
 
+.headShowNoTransitionShow {
+    top: 0px;
+}
+
 .headShow {
     top: 0px;
     transition: top 1.5s ease;
 }
 
-
+.main {
+        padding: 115px 0 120px;
+}
 
 /*------------- shop syles ------------ */
 
