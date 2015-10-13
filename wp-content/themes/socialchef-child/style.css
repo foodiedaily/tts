@@ -119,6 +119,19 @@ body {
         padding: 115px 0 120px;
 }
 
+
+/*------------- profile syles ------------ */
+
+.drag-drop .drag-drop-inside p {
+    color: #444;
+}
+
+.bp-avatar .bp-uploader-window {
+    border: 1px solid #ddd;
+
+}
+
+
 /*------------- shop syles ------------ */
 
 .attachment-shop_single.wp-post-image {
