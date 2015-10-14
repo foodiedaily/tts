@@ -155,6 +155,15 @@ body {
     color: #e76811 !important;
 }
 
+/*------------- profile syles ------------ */
+
+.widget #members-list li {
+    width: 33.3334%;
+}
+#members-list .vcard .item-avatar a img {
+    width: 100%;
+    height: auto;
+}
 
 /*------------- profile syles ------------ */
 
