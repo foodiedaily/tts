@@ -33,7 +33,7 @@
 		    	$("#headID").addClass("headHide");
 		    	$("#headID").removeClass("headShow");
 		  
-			};
+			}
 		});
 
 
