@@ -107,11 +107,11 @@ body {
 }
 
 .headShowNoTransitionShow {
-    top: 0px;
+    top: 0;
 }
 
 .headShow {
-    top: 0px;
+    top: 0;
     transition: top 1.5s ease;
 }
 
@@ -121,7 +121,7 @@ body {
 
 /*------------- BP login widget ------------ */
 .bp-login-widget-user-avatar img {
-    margin: 0px 10px 10px 0px;
+    margin: 0 10px 10px 0;
 }
 
 .bp-login-widget-user-logout {
@@ -155,15 +155,6 @@ body {
     color: #e76811 !important;
 }
 
-/*------------- profile syles ------------ */
-
-.widget #members-list li {
-    width: 33.3334%;
-}
-#members-list .vcard .item-avatar a img {
-    width: 100%;
-    height: auto;
-}
 
 /*------------- profile syles ------------ */
 
