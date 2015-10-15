@@ -13,6 +13,119 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700italic,700|Lato:400,100,100italic,300,300italic,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 
+body {
+    /*background: url(http://tts.dev/wp-content/uploads/2015/10/body2.png) 0 0 repeat;
+    background-image: url(http://tts.dev/wp-content/uploads/2015/10/body2.png);*/
+    background:none;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: initial;
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+
+    font-family: 'Lato',Open Sans,sans-serif;
+
+}
+
+.main {
+    padding: 115px 0 120px;
+}
+
+.main .wrap {
+    width: 1366px;
+}
+
+/********************
+***GENERAL CLASSES***
+********************/
+
+.displayNone {
+    display: none;
+}
+
+
+.txtCenter {
+    text-align: center;
+}
+
+.txtLeft {
+    text-align: left;
+}
+
+.txtRight {
+    text-align: right;
+}
+
+.txtBlock {
+    display: block;
+}
+
+.txtBlockIn {
+    display: inline-block;
+}
+
+.txtDivCenter {
+    margin: 0 auto;
+}
+
+.txtPadding {
+    padding: 10px;
+}
+.txtPadding2 {
+    padding: 0 10px;
+}
+.txtPaddingTop {
+    padding-top: 10px;
+}
+
+.txtPaddingSideNone{
+    padding-left: 0;
+    padding-right: 0;
+}
+.txtMarginLeft0 {
+    margin-left: 0;
+}
+
+/************************
+***GENERAL CLASSES END***
+************************/
+
+
+/*------------- header styles ------------ */
+
+.head .wrap {
+    min-width: 100%;
+    max-width: 100%;
+    /*    background: rgba(197,170,131,0.5);*/
+    background: rgba(255,255,255,0.9);
+}
+
+#headID {
+    position: fixed;
+    z-index: 200;
+}
+
+/*transition: <property> <duration> <timing-function> <delay>;*/
+.headHide {
+    top: -100px;
+    transition: top 1.5s ease;
+}
+
+.headShowNoTransitionShow {
+    top: 0;
+}
+
+.headShow {
+    top: 0;
+    transition: top 1.5s ease;
+}
+
+
+
+
 .verticalCenter {
   position: relative;
   top: 50%;
@@ -32,31 +145,14 @@ h2.large {
     display: none;
 }
 
-body {
-    /*background: url(http://tts.dev/wp-content/uploads/2015/10/body2.png) 0 0 repeat;
-    background-image: url(http://tts.dev/wp-content/uploads/2015/10/body2.png);*/
-    background:none;
-    background-position-x: 0px;
-    background-position-y: 0px;
-    background-size: initial;
-    background-repeat-x: repeat;
-    background-repeat-y: repeat;
-    background-attachment: fixed;
-    background-origin: initial;
-    background-clip: initial;
 
-    font-family: 'Lato',Open Sans,sans-serif;
-
-}
 
 .icons .ico {
 	/*color: #8b8886;*/
     color: #c5aa83;
 }
 
-.main .wrap {
-    width: 1366px;
-}
+
 
 /*------------- landing page styles ------------ */
 
@@ -84,39 +180,6 @@ body {
     max-width: 100%;
     text-align: center;
     margin: -55px 10% 0;
-}
-
-/*------------- header styles ------------ */
-
-.head .wrap {
-    min-width: 100%;
-    max-width: 100%;
-/*    background: rgba(197,170,131,0.5);*/
-    background: rgba(255,255,255,0.9);
-}
-
-#headID {
-    position: fixed;
-    z-index: 200;
-}
-
-/*transition: <property> <duration> <timing-function> <delay>;*/
-.headHide {
-    top: -100px;
-    transition: top 1.5s ease;
-}
-
-.headShowNoTransitionShow {
-    top: 0;
-}
-
-.headShow {
-    top: 0;
-    transition: top 1.5s ease;
-}
-
-.main {
-        padding: 115px 0 120px;
 }
 
 /*------------- BP login widget ------------ */
@@ -156,7 +219,7 @@ body {
 }
 
 
-/*------------- profile syles ------------ */
+/*------------- profile styles ------------ */
 
 .drag-drop .drag-drop-inside p {
     color: #444;
@@ -168,13 +231,48 @@ body {
 }
 
 
-/*------------- shop syles ------------ */
+/*------------- shop styles ------------ */
 
 .attachment-shop_single.wp-post-image {
     border: 1px solid #DDD;
 }
 
 
+/***************
+**MEMBERS PAGE**
+***************/
+.members-sidebar #secondary-right {
+    float: right;
+}
+
+#member_page ul#members-list {
+    float: left;
+    width: 75%;
+}
+/***************
+**MEMBERS PAGE END**
+***************/
+
+/***************
+*MEDIA QUIERIES*
+***************/
+
+@media screen and (max-width: 1200px) {
+    /***************
+    **MEMBERS PAGE**
+    ***************/
+    .members-sidebar #secondary-right {
+        display: none;
+    }
+
+    #member_page ul#members-list {
+        width: 100%;
+    }
+    /***************
+    **MEMBERS PAGE END**
+    ***************/
+
+}
 
 
 

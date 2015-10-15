@@ -10,7 +10,16 @@
  */
 
 ?>
-
+<div class="members-sidebar">
+<?php if ( is_active_sidebar( 'right' ) ) : ?>
+	<aside id="secondary-right" class="right-sidebar sidebar widget-area one-fourth" role="complementary">
+		<ul>
+			<?php dynamic_sidebar( 'right' ); ?>
+		</ul>
+	</aside><!-- #secondary -->
+<?php endif; ?>
+</div>
+<div id="member_page">
 <?php do_action( 'bp_before_members_loop' ); ?>
 
 <?php if ( bp_has_members( bp_ajax_querystring( 'members' ) ) ) : ?>
@@ -111,3 +120,4 @@
 <?php endif; ?>
 
 <?php do_action( 'bp_after_members_loop' ); ?>
+	</div>
