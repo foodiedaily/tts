@@ -4,6 +4,7 @@
 
 	$(document).ready(function(){
 
+		console.log("IT works");
 
 	function headerShow() {
 		var url = window.location.href;
