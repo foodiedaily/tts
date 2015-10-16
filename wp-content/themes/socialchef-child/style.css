@@ -253,6 +253,20 @@ h2.large {
 **MEMBERS PAGE END**
 ***************/
 
+
+/***************
+**NEWS PAGE**
+***************/
+
+#sidebar-border ul > li:before {
+    content: none;
+}
+
+
+/***************
+**NEWS PAGE END**
+***************/
+
 /***************
 *MEDIA QUIERIES*
 ***************/
