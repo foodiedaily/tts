@@ -94,8 +94,10 @@ body {
 ************************/
 
 
-/*------------- header styles ------------ */
 
+/************************
+***HEADER STYLES***
+************************/
 .head .wrap {
     min-width: 100%;
     max-width: 100%;
@@ -123,9 +125,6 @@ body {
     transition: top 1.5s ease;
 }
 
-
-
-
 .verticalCenter {
   position: relative;
   top: 50%;
@@ -146,15 +145,19 @@ h2.large {
 }
 
 
-
 .icons .ico {
 	/*color: #8b8886;*/
     color: #c5aa83;
 }
 
+/************************
+***END HEADER STYLES***
+************************/
 
+/************************
+***LANDING PAGE STYLES***
+************************/
 
-/*------------- landing page styles ------------ */
 
 
 .intro .row > div:last-of-type {
@@ -182,7 +185,14 @@ h2.large {
     margin: -55px 10% 0;
 }
 
-/*------------- BP login widget ------------ */
+/************************
+***END LANDING PAGE STYLES***
+************************/
+
+/************************
+***BP LOGIN WIDGET***
+************************/
+
 .bp-login-widget-user-avatar img {
     margin: 0 10px 10px 0;
 }
@@ -218,8 +228,14 @@ h2.large {
     color: #e76811 !important;
 }
 
+/************************
+***END BP LOGIN WIDGET***
+************************/
 
-/*------------- profile styles ------------ */
+/************************
+***PROFILE STYLES***
+************************/
+
 
 .drag-drop .drag-drop-inside p {
     color: #444;
@@ -230,13 +246,22 @@ h2.large {
 
 }
 
+/************************
+***END PROFILE STYLES***
+************************/
 
-/*------------- shop styles ------------ */
+/************************
+***SHOP STYLES***
+************************/
+
 
 .attachment-shop_single.wp-post-image {
     border: 1px solid #DDD;
 }
 
+/************************
+***END SHOP STYLES***
+************************/
 
 /***************
 **MEMBERS PAGE**
@@ -267,8 +292,21 @@ h2.large {
 **NEWS PAGE END**
 ***************/
 
+
 /***************
-*MEDIA QUIERIES*
+**RECIPE PAGE**
+***************/
+
+.instructions p {
+    display: none;
+}
+
+/***************
+**END RECIPE PAGE**
+***************/
+
+/***************
+*MEDIA QUERIES*
 ***************/
 
 @media screen and (max-width: 1200px) {
