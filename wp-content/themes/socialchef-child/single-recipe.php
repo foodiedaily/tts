@@ -174,8 +174,8 @@ if ( have_posts() ) while ( have_posts() ) :
 								}?>
 								</ol>
 								<?php if ($recipe_video) { ?>
-									<dt><?php _e('Featured Product', 'socialchef'); ?></dt>
-									<dd itemprop="prepTime" content="<?php echo html_entity_decode($recipe_video); ?>"><?php echo html_entity_decode($recipe_video); ?> <?php _e('mins', 'socialchef'); ?></dd>
+									<h2><?php _e('Video', 'socialchef'); ?></h2>
+									<?php echo html_entity_decode($recipe_video); ?>
 								<?php } ?>
 
 
