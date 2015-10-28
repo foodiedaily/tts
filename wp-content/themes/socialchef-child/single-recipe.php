@@ -1,5 +1,5 @@
 <?php
-get_header('buddypress');
+get_header('shop');
 SocialChef_Theme_Utils::breadcrumbs();
 get_sidebar('under-header');
 
@@ -207,7 +207,7 @@ if (have_posts()) while (have_posts()) :
                     <!--//row-->
                 </article>
                 <!--//recipe-->
-                <?php comments_template('/short-comments.php', true); ?>
+                <?php comments_template('/comments.php', true); ?>
                 <!--//recipe entry-->
             </section>
             <?php get_sidebar('right-recipe'); ?>
@@ -216,4 +216,4 @@ if (have_posts()) while (have_posts()) :
     </div><!--//row-->
     <?php
 endwhile;
-get_footer('buddypress');
+get_footer('shop');
