@@ -70,7 +70,7 @@ if (have_posts()) while (have_posts()) :
                                         <a href="<?php echo get_permalink($post->ID); ?>">
                                             <div class="col-md-3">
                                                 <p class="feature_product_title"><?php echo $post->post_title; ?> </p>
-                                                <?php echo get_the_post_thumbnail($post->ID, 'thumbnail', array('class' => 'feature_product_image')); ?>
+                                                <?php echo get_the_post_thumbnail($post->ID, '', array('class' => 'feature_product_image')); ?>
                                             </div>
                                         </a>
                                     </div>
