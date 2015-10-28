@@ -66,7 +66,8 @@ if (have_posts()) while (have_posts()) :
                                     <p class="featured_product_text"><?php _e('Featured Product', 'socialchef'); ?></p>
                                     <?php $post = get_post($recipe_featured_product); ?>
                                     <div class="row">
-
+                                        <?php $categories = get_terms( 'product_brand', 'include=135' );
+                                        echo $categories[0]->name;?>
                                         <a href="<?php echo get_permalink($post->ID); ?>">
                                             <div class="col-md-3">
                                                 <p class="feature_product_title"><?php echo $post->post_title; ?> </p>

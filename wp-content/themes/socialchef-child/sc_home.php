@@ -13,35 +13,37 @@
 get_header('buddypress');
 $home_intro_background_image = $sc_theme_globals->get_home_intro_background();
 
-get_sidebar( 'home-intro' );
+get_sidebar('home-intro');
 ?>
-<div class="row">
-<header class="featured_header">
-	<h1>Taste Tout Shout du Jour </h1>
-</header>
-<?php
-get_sidebar('under-header');
-global $sc_theme_globals;
+    <div class="wrap clearfix">
+        <div class="row under-header-row">
+            <header class="featured_header">
+                <h1>Taste Tout Shout du Jour </h1>
+            </header>
+            <?php
+            get_sidebar('under-header');
+            global $sc_theme_globals;
 
-$show_social_chef_in_numbers_on_homepage = $sc_theme_globals->show_social_chef_in_numbers_on_homepage();
-?>
-</div>
-		<div class="wrap clearfix">
-			<!--row-->
-			<div class="row">
-				<?php 
-				if ($show_social_chef_in_numbers_on_homepage)
-					get_template_part('includes/parts/socialchef', 'in-numbers'); 
-				?>				
-				<section class="content three-fourth">
-					<?php get_sidebar( 'home-featured-content' ); ?>
-					<?php get_sidebar( 'home-main-content' ); ?>
-					<?php wp_reset_postdata(); ?>
-				</section>
-				<?php get_sidebar( 'right' ); ?>
-			</div>
-			<!--//row-->
-		</div>
-		<!--//wrap-->
+            $show_social_chef_in_numbers_on_homepage = $sc_theme_globals->show_social_chef_in_numbers_on_homepage();
+            ?>
+        </div>
+    </div>
+    <div class="wrap clearfix">
+        <!--row-->
+        <div class="row">
+            <?php
+            if ($show_social_chef_in_numbers_on_homepage)
+                get_template_part('includes/parts/socialchef', 'in-numbers');
+            ?>
+            <section class="content three-fourth">
+                <?php get_sidebar('home-featured-content'); ?>
+                <?php get_sidebar('home-main-content'); ?>
+                <?php wp_reset_postdata(); ?>
+            </section>
+            <?php get_sidebar('right'); ?>
+        </div>
+        <!--//row-->
+    </div>
+    <!--//wrap-->
 <?php
-get_footer( 'buddypress' ); 
+get_footer('buddypress');
