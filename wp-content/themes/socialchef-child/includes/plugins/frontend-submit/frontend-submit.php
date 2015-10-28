@@ -195,6 +195,16 @@ class Frontend_Submit
         $instruction_indexes = array();
         $nutritional_element_indexes = array();
 
+        $video = isset($_POST['recipe_video']) ? wp_kses_post($_POST['recipe_video']) : '';
+        if ($video) {
+            $video_meta = get_post_meta($post_id, 'recipe_video', true);
+            if (!empty ($video_meta)) {
+                update_post_meta($post_id, 'recipe_video', $video);
+            } else {
+                add_post_meta($post_id, 'recipe_video', $video);
+            }
+        }
+
         foreach ($_POST as $key => $value) {
             if (preg_match("/ingredient_(\d+)_name/", $key, $match)) {
                 $ingredient_indexes[] = $match[1];
@@ -464,10 +474,14 @@ class Frontend_Submit
                 // Save the author name if it was filled and post was created successfully
                 if ($author)
                     add_post_meta($entry_id, 'author_name', $author);
-
-                if ($video)
-                    add_post_meta($entry_id, 'recipe_video', $video);
-
+                if ($video) {
+                    $video_meta = get_post_meta($entry_id, 'recipe_video', true);
+                    if (!empty ($video_meta)) {
+                        update_post_meta($entry_id, 'recipe_video', $video);
+                    } else {
+                        add_post_meta($entry_id, 'recipe_video', $video);
+                    }
+                }
                 if ($post_type == 'recipe') {
                     $admin_email = get_option('admin_email');
 
@@ -1065,25 +1079,25 @@ class Frontend_Submit
 
         // feature product
         $this->form_fields[] = (object)array('type' => 'div', 'class' => 'third', 'is_closing' => false);
-        $args = array( 'post_type' => 'product', 'posts_per_page' => -1);
+        $args = array('post_type' => 'product', 'posts_per_page' => -1);
 
-        $loop = get_posts( $args );
+        $loop = get_posts($args);
 //        var_dump($loop);
         $featured_product_str = ':' . __('Select featured product', 'socialchef') . ',';
-        foreach($loop as $featured_product) {
-            setup_postdata( $featured_product );
+        foreach ($loop as $featured_product) {
+            setup_postdata($featured_product);
 //            var_dump($featured_product->ID);
 
             $featured_product_str .= $featured_product->ID . ":" . $featured_product->post_title . ",";
-           }
+        }
 //        var_dump($featured_product_str);
 
         wp_reset_postdata();
         $featured_product_str = rtrim($featured_product_str, ',');
         $featured_product_field = array('type' => 'select', 'role' => 'internal', 'name' => 'featured_product', 'id' => 'fes_recipe_featured_product', 'description' => __('Select featured product', 'socialchef'), 'values' => $featured_product_str, 'class' => 'select');
-           if ($this->entry != null) {
-               $featured_product_field['value'] = $this->get_entry_field_value('featured_product');
-           }
+        if ($this->entry != null) {
+            $featured_product_field['value'] = $this->get_entry_field_value('featured_product');
+        }
         $this->form_fields[] = (object)$featured_product_field;
         $this->form_fields[] = (object)array('type' => 'div', 'class' => '', 'is_closing' => true);
 
