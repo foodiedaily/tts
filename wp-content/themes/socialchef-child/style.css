@@ -154,6 +154,38 @@ h2.large {
 ***END HEADER STYLES***
 ************************/
 
+/***********************
+***UNDER HEADER SIDEBAR
+STYLES***
+************************/
+
+.page-template-sc_home-php .under-header-sidebar {
+    position: static;
+}
+
+.under-header-sidebar ul {
+    width: 75%;
+}
+
+.under-header-sidebar ul li.widget.widget-sidebar {
+    width: 33.33%;
+}
+
+.under-header-sidebar .featured.two-third {
+    width: 33.33%;
+}
+
+.under-header-sidebar .featured.one-third {
+    padding: 0 0 30px;
+}
+
+
+/***********************
+***END UNDER HEADER SIDEBAR
+STYLES***
+************************/
+
+
 /************************
 ***LANDING PAGE STYLES***
 ************************/
