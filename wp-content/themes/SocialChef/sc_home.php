@@ -10,7 +10,7 @@
  * @subpackage SocialChef
  * @since SocialChef 1.0
  */
-get_header('buddypress'); 
+get_header('buddypress');
 get_sidebar('under-header');
 global $sc_theme_globals;
 $home_intro_background_image = $sc_theme_globals->get_home_intro_background();
