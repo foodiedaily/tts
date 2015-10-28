@@ -301,6 +301,34 @@ h2.large {
     display: none;
 }
 
+.featured_product {
+    border: 1px solid #ebebeb;
+    margin-bottom: 50px;
+}
+
+.featured_product_text {
+    font-size: 15px;
+    color: #666;
+    padding: 16px 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.feature_product_title {
+    padding: 9px 20px;
+    color: #666;
+    font-size: 13px;
+}
+
+.featured_product .row .col-md-3 {
+    padding: 0 15px 30px;
+}
+
+.featured_product .row .col-md-3 img {
+    width: 100%;
+}
+
+
 /***************
 **END RECIPE PAGE**
 ***************/
