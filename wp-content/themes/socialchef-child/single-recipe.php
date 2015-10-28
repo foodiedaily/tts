@@ -67,10 +67,11 @@ if (have_posts()) while (have_posts()) :
                                     <?php $post = get_post($recipe_featured_product); ?>
                                     <div class="row">
                                         <a href="<?php echo get_permalink($post->ID); ?>">
-                                        <?php $categories = get_terms( 'product_brand', 'include=135' );
-                                        echo $categories[0]->name;?>
+                                            <?php $categories = get_terms( 'product_brand', 'include=135' ); ?>
+
 
                                             <div class="col-md-3">
+                                                <h3><?php echo $categories[0]->name;?></h3>
                                                 <p class="feature_product_title"><?php echo $post->post_title; ?> </p>
                                                 <?php echo get_the_post_thumbnail($post->ID, '', array('class' => 'feature_product_image')); ?>
                                             </div>
