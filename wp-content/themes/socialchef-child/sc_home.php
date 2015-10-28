@@ -15,6 +15,7 @@ $home_intro_background_image = $sc_theme_globals->get_home_intro_background();
 
 get_sidebar( 'home-intro' );
 ?>
+<div class="row">
 <header class="featured_header">
 	<h1>Taste Tout Shout du Jour </h1>
 </header>
@@ -24,7 +25,7 @@ global $sc_theme_globals;
 
 $show_social_chef_in_numbers_on_homepage = $sc_theme_globals->show_social_chef_in_numbers_on_homepage();
 ?>
-
+</div>
 		<div class="wrap clearfix">
 			<!--row-->
 			<div class="row">
