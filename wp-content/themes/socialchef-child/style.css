@@ -154,6 +154,40 @@ h2.large {
 ***END HEADER STYLES***
 ************************/
 
+/************************
+***LANDING PAGE STYLES***
+************************/
+
+
+.intro .row > div:last-of-type {
+	width: 100%;
+	text-align: center;
+}
+
+.page-template-sc_home .intro .wrap {
+    margin-top: 10%;
+}
+
+#socialchef_home_intro_widget-2.socialchef_home_intro_widget .three-fourth text>h1 {
+    font-weight: 100;
+   /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;*/
+    text-shadow: 1px 1px 14px #000000;
+    padding-bottom: 0; 
+}
+
+#socialchef_home_intro_widget-3 p {
+    font-size: 24px;
+    font-weight: 100;
+    text-shadow: 1px 1px 6px #000000;
+    max-width: 100%;
+    text-align: center;
+    margin: -55px 10% 0;
+}
+
+/************************
+***END LANDING PAGE STYLES***
+************************/
+
 /***********************
 ***UNDER HEADER SIDEBAR
 STYLES***
@@ -169,7 +203,7 @@ STYLES***
     border-radius: 3px;
     padding-top: 10px;
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 
 .page-template-sc_home-php .under-header-sidebar {
@@ -185,7 +219,6 @@ STYLES***
 .under-header-sidebar ul li.widget.widget-sidebar {
     width: 25%;
     height: 655px;
-    border-top: 1px solid #ebebeb;
 }
 
 ul.product_list_widget li {
@@ -253,7 +286,10 @@ ul.product_list_widget li {
 }
 
 .under-header-sidebar .widget.widget-sidebar .product_list_widget .product-title {
-    text-align: center;
+    padding: 0 20px;
+    color: #666 !important;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .under-header-sidebar .widget.widget-sidebar .product_list_widget .star-rating {
@@ -292,40 +328,30 @@ ul.product_list_widget li {
 STYLES***
 ************************/
 
-
-/************************
-***LANDING PAGE STYLES***
+/***********************
+***HOME PAGE STYLES***
 ************************/
 
-
-.intro .row > div:last-of-type {
-	width: 100%;
-	text-align: center;
+/*gray divider between under-header-sidebar and other content*/
+.home-page .under-header-sidebar:before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  bottom  : 0;
+  height  : 1px;
+  width   : 1170px;  /* or 100px */
+  border-bottom: 1px solid #ebebeb;
 }
 
-.page-template-sc_home .intro .wrap {
-    margin-top: 10%;
+/*margin between main page content and under-header-sidebar divider*/
+.home-page .content.three-fourth, .home-page .right-sidebar.sidebar.widget-area.one-fourth {
+    margin-top: 50px;
 }
 
-#socialchef_home_intro_widget-2.socialchef_home_intro_widget .three-fourth text>h1 {
-    font-weight: 100;
-   /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;*/
-    text-shadow: 1px 1px 14px #000000;
-    padding-bottom: 0; 
-}
-
-#socialchef_home_intro_widget-3 p {
-    font-size: 24px;
-    font-weight: 100;
-    text-shadow: 1px 1px 6px #000000;
-    max-width: 100%;
-    text-align: center;
-    margin: -55px 10% 0;
-}
-
-/************************
-***END LANDING PAGE STYLES***
+/***********************
+***END HOME PAGE STYLES***
 ************************/
+
 
 /************************
 ***BP LOGIN WIDGET***
