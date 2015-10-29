@@ -51,8 +51,15 @@ if (have_posts()) while (have_posts()) :
     <div class="row">
         <div itemscope itemtype="http://schema.org/Recipe" <?php post_class(); ?>>
             <header class="s-title">
-                <h1 itemprop="name" class="entry-title"><?php the_title(); ?></h1>
+                <h1 itemprop="name" class="entry-title" style="padding: 0 15px 10px"><?php the_title(); ?></h1>
             </header>
+            <div class="woocommerce">
+                <p class="stars">
+                    <span>
+                        <a class="star-5 active" href="#"style="margin-left: 3%" >5</a>
+                    </span>
+                </p>
+            </div>
             <!--content-->
             <section class="content three-fourth">
                 <!--recipe-->
