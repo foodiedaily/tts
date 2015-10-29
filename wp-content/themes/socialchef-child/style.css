@@ -159,24 +159,131 @@ h2.large {
 STYLES***
 ************************/
 
+.featured_header h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    background-color: #ef7622;
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding-top: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 .page-template-sc_home-php .under-header-sidebar {
     position: static;
+    padding: 0 15px 30px;
 }
 
 .under-header-sidebar ul {
-    width: 75%;
+    width: 100%;
 }
 
+/*featured product*/
 .under-header-sidebar ul li.widget.widget-sidebar {
-    width: 33.33%;
+    width: 25%;
+    height: 655px;
+    border-top: 1px solid #ebebeb;
 }
 
+ul.product_list_widget li {
+    border-top: 1px solid #ebebeb;
+}
+
+/*featured recipe*/
 .under-header-sidebar .featured.two-third {
-    width: 33.33%;
+    width: 50%;
+    padding: 0 0 30px 15px;
 }
 
+/*featured member*/
 .under-header-sidebar .featured.one-third {
-    padding: 0 0 30px;
+    width: 25%;
+    padding: 0 0 30px 15px;
+}
+
+.under-header-sidebar .featured.one-third blockquote {
+    overflow: hidden;
+    height: 153px;
+}
+
+.under-header-sidebar .featured.two-third .entry figure {
+    
+}
+
+.under-header-sidebar .featured.two-third .container {
+    
+}
+
+.under-header-sidebar .featured.two-third .entry figure img {
+    
+}
+
+.under-header-sidebar ul li.widget.widget-sidebar h5 {
+    font-size: 18px;
+    color: #666;
+    padding: 16px 20px;
+    font-weight: 700; 
+}
+
+.under-header-sidebar .featured.one-third h5 {
+    font-size: 18px;
+    color: #666;
+    padding: 16px 20px;
+    font-weight: 700;
+    border: 1px solid #ebebeb;
+}
+
+.under-header-sidebar .featured.two-third h5 {
+    font-size: 18px;
+    color: #666;
+    padding: 16px 20px;
+    font-weight: 700;
+    border: 1px solid #ebebeb;
+}
+
+.under-header-sidebar .widget.widget-sidebar .product_list_widget {
+    padding-bottom: 30px;
+}
+
+.under-header-sidebar .widget.widget-sidebar .product_list_widget img {
+    width: 100%;
+}
+
+.under-header-sidebar .widget.widget-sidebar .product_list_widget .product-title {
+    text-align: center;
+}
+
+.under-header-sidebar .widget.widget-sidebar .product_list_widget .star-rating {
+    line-height: 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.under-header-sidebar .widget.widget-sidebar .product_list_widget .star-rating:before {
+    content: "Spare ribs venison cow meatloaf strip steak rump. Ham rump filet mignon boudin picanha andouille doner fatback capicola prosciutto. Sirloin t-bone cupim beef ribs strip steak doner cow biltong ground round turducken picanha ham drumstick pancetta. Meatloaf sausage pastrami corned beef ball tip fatback. ";
+}
+
+.under-header-sidebar .widget.widget-sidebar .product_list_widget .star-rating span {
+    background-color: #EF7622;
+    width: 237.5px !important;
+    font-size: 12px;
+    border: none;
+    color: #fff !important;
+    text-align: center;
+    font-weight: 600 !important;
+    padding: 7px 14px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 18px 0px;
 }
 
 
@@ -189,7 +296,6 @@ STYLES***
 /************************
 ***LANDING PAGE STYLES***
 ************************/
-
 
 
 .intro .row > div:last-of-type {
@@ -329,13 +435,48 @@ STYLES***
 **RECIPE PAGE**
 ***************/
 
-.instructions p {
-    display: none;
+.instructions ol {
+    margin: 95px 0 0 0;
+}
+
+.instructions li:first-child:before {
+    content: "Instructions";
+    padding: 0 20px;
+    border-radius: 3px;
+    position: absolute;
+    left: 0px;
+    top: -55px;
+    color: #fff;
+    height: 50px;
+    width: 50%;
+    line-height: 50px;
+    text-align: left;
+    font-size: 24px;
+    -webkit-text-shadow: 0 0 0 rgba(0,0,0,0);
+    -moz-text-shadow: 0 0 0 rgba(0,0,0,0);
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.instructions li:before {
+    content: none;
+}
+
+.instructions li {
+    margin: 0;
+}
+
+.instructions H2 {
+    color: transparent;
 }
 
 .featured_product {
     border: 1px solid #ebebeb;
     margin-bottom: 50px;
+}
+
+.featured_product H3 {
+    padding-left: 19px;
+    margin-bottom: -25px;
 }
 
 .featured_product_text {
@@ -358,6 +499,10 @@ STYLES***
 
 .featured_product .row .col-md-3 img {
     width: 100%;
+}
+
+.single-recipe iframe {
+    margin-top: 30px;
 }
 
 
