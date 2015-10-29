@@ -442,7 +442,6 @@ STYLES***
 .instructions li:first-child:before {
     content: "Instructions";
     padding: 0 20px;
-    border-radius: 3px;
     position: absolute;
     left: 0px;
     top: -55px;
@@ -505,6 +504,13 @@ STYLES***
     margin-top: 30px;
 }
 
+#secondary-right-recipe ul li.widget.nutrition {
+    margin-top: 476px;
+}
+
+#secondary-right-recipe ul li.widget.share.widget-sidebar {
+    margin-top: -854px;
+}
 
 /***************
 **END RECIPE PAGE**
