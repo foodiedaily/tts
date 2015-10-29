@@ -210,7 +210,7 @@ if (have_posts()) while (have_posts()) :
                     <!--//row-->
                 </article>
                 <!--//recipe-->
-                <?php comments_template('/comments.php', true); ?>
+                <?php comments_template('/short-comments.php', true); ?>
                 <!--//recipe entry-->
             </section>
             <?php get_sidebar('right-recipe'); ?>

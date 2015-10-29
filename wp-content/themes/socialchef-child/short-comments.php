@@ -14,7 +14,7 @@ if (post_password_required()) { ?>
 ?>
 
 <!--comments-->
-<div class="comments" id="comments" itemprop="interactionCount"
+<div class="comments" id="recipe_comments" itemprop="interactionCount"
      content="UserComments:<?php echo get_comments_number($post_id); ?>">
     <?php if (have_comments()) { ?>
         <h1><?php comments_number(__('No comments', 'socialchef'), __('One comment', 'socialchef'), __('% comments', 'socialchef')); ?></h1>
@@ -76,7 +76,7 @@ if (post_password_required()) { ?>
                 }
 
                 if ( get_option( 'woocommerce_enable_review_rating' ) === 'yes' ) {
-                    $comment_form['comment_field'] = '<p class="comment-form-rating"><label for="rating">' . __( 'Your Rating', 'woocommerce' ) .'</label><select name="rating" id="rating">
+                    $comment_form['comment_field'] = '<p class="comment-form-rating"><label for="rating">' . __( 'Your Rating', 'woocommerce' ) .'</label><select name="rating" id="recipe_rating">
 							<option value="">' . __( 'Rate&hellip;', 'woocommerce' ) . '</option>
 							<option value="5">' . __( 'Perfect', 'woocommerce' ) . '</option>
 							<option value="4">' . __( 'Good', 'woocommerce' ) . '</option>

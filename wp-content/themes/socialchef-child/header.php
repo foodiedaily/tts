@@ -43,6 +43,10 @@
 		window.currentLanguage = '<?php echo ICL_LANGUAGE_CODE; ?>';
 	<?php } ?>
 	</script>
+	<script>
+		var baseurl = "<?php echo get_bloginfo('template_url'); ?>";
+		var imagefolder = "<?php echo get_bloginfo('template_directory'); ?>";
+	</script>
     <?php 
 	if (defined('BP_VERSION')) { 
 		bp_head();
