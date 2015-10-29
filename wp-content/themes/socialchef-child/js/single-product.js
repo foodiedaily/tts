@@ -57,30 +57,30 @@ jQuery( function( $ ) {
 				console.log(rating_value);
 				return false;
 			})
-			.on('click', '#recipe_comments #respond #submit', function () {
-				event.preventDefault();
-
-				if(rating_value > 0 && rating_value <= 5) {
-					$.ajax({
-						url: baseurl + "/product_categories.php",
-						type: "POST",
-						beforeSend: function (xhr) {
-							$('#product_image').html('<div class="loading"><img id="loader-img" alt="" src="' + baseurl + '/images/728.GIF" align="center" /></div>');
-						},
-						success: function (results) {
-							var posts = JSON.parse(results);
-						},
-						error: function () {
-							console.log('Cannot retrieve data.');
-						}
-					});
-				}
+			//.on('click', '#recipe_comments #respond #submit', function () {
+			//	event.preventDefault();
+            //
+			//	if(rating_value > 0 && rating_value <= 5) {
+			//		$.ajax({
+			//			url: baseurl + "/product_categories.php",
+			//			type: "POST",
+			//			beforeSend: function (xhr) {
+			//				$('#product_image').html('<div class="loading"><img id="loader-img" alt="" src="' + baseurl + '/images/728.GIF" align="center" /></div>');
+			//			},
+			//			success: function (results) {
+			//				var posts = JSON.parse(results);
+			//			},
+			//			error: function () {
+			//				console.log('Cannot retrieve data.');
+			//			}
+			//		});
+			//	}
 
 				//if ($rating.size() > 0 && !rating && wc_single_product_params.review_rating_required === 'yes') {
 				//	window.alert(wc_single_product_params.i18n_required_rating_text);
                 //
 				//	return false;
 				//}
-			});
+			//});
 	});
 });
