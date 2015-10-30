@@ -362,8 +362,14 @@ class WC_API_Products extends WC_API_Resource {
 			$this->save_product_meta( $id, $data );
 
 			// Save variations
-			if ( isset( $data['type'] ) && 'variable' == $data['type'] && isset( $data['variations'] ) && is_array( $data['variations'] ) ) {
-				$this->save_variations( $id, $data );
+			$product = get_product( $id );
+			if ( $product->is_type( 'variable' ) ) {
+				if ( isset( $data['variations'] ) && is_array( $data['variations'] ) ) {
+					$this->save_variations( $id, $data );
+				} else {
+					// Just sync variations
+					WC_Product_Variable::sync( $id );
+				}
 			}
 
 			do_action( 'woocommerce_api_edit_product', $id, $data );
@@ -605,6 +611,8 @@ class WC_API_Products extends WC_API_Resource {
 				'value'   => $args['sku'],
 				'compare' => '='
 			);
+
+			$query_args['post_type'] = array( 'product', 'product_variation' );
 		}
 
 		$query_args = $this->merge_query_args( $query_args, $args );
@@ -853,15 +861,14 @@ class WC_API_Products extends WC_API_Resource {
 				if ( $is_taxonomy ) {
 
 					if ( isset( $attribute['options'] ) ) {
-						// Select based attributes - Format values (posted values are slugs)
-						if ( is_array( $attribute['options'] ) ) {
-							$values = array_map( 'sanitize_title', $attribute['options'] );
+						$options = $attribute['options'];
 
-						// Text based attributes - Posted values are term names - don't change to slugs
-						} else {
-							$values = array_map( 'wc_sanitize_term_text_based', explode( WC_DELIMITER, $attribute['options'] ) );
+						if ( ! is_array( $attribute['options'] ) ) {
+							// Text based attributes - Posted values are term names
+							$options = explode( WC_DELIMITER, $options );
 						}
 
+						$values = array_map( 'wc_sanitize_term_text_based', $options );
 						$values = array_filter( $values, 'strlen' );
 					} else {
 						$values = array();
