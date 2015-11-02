@@ -57,30 +57,30 @@ jQuery( function( $ ) {
 				console.log(rating_value);
 				return false;
 			})
-			//.on('click', '#recipe_comments #respond #submit', function () {
-			//	event.preventDefault();
-            //
-			//	if(rating_value > 0 && rating_value <= 5) {
-			//		$.ajax({
-			//			url: baseurl + "/product_categories.php",
-			//			type: "POST",
-			//			beforeSend: function (xhr) {
-			//				$('#product_image').html('<div class="loading"><img id="loader-img" alt="" src="' + baseurl + '/images/728.GIF" align="center" /></div>');
-			//			},
-			//			success: function (results) {
-			//				var posts = JSON.parse(results);
-			//			},
-			//			error: function () {
-			//				console.log('Cannot retrieve data.');
-			//			}
-			//		});
-			//	}
+		$("#recipe_comments #commentform").submit(function() {
 
+				if(rating_value > 0 && rating_value <= 5) {
+					$.ajax({
+						//url: baseurl + "/rating.php?rating=" + rating_value,
+						url: "http://tts.dev/wp-content/themes/socialchef-child/rating.php?rating=" + rating_value,
+						type: "POST",
+						success: function (results) {
+							//var posts = JSON.parse(results);
+							//console.log(posts);
+							console.log('Work.');
+
+						},
+						error: function () {
+							console.log('Cannot retrieve data.');
+						}
+					});
+				}
+				return true;
 				//if ($rating.size() > 0 && !rating && wc_single_product_params.review_rating_required === 'yes') {
 				//	window.alert(wc_single_product_params.i18n_required_rating_text);
                 //
 				//	return false;
 				//}
-			//});
+			});
 	});
 });
