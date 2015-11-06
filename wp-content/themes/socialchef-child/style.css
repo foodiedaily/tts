@@ -348,6 +348,14 @@ STYLES***
     margin-top: 50px;
 }
 
+.home-page #secondary-right ul {
+    margin-top: 75px;
+}
+
+.home-page #secondary-right ul li.widget.widget-sidebar {
+    margin-top: 450px;
+}
+
 /***********************
 ***END HOME PAGE STYLES***
 ************************/
