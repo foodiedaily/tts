@@ -1,3 +1,4 @@
+
 <?php
 get_header('shop');
 SocialChef_Theme_Utils::breadcrumbs();

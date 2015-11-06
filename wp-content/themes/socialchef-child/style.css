@@ -563,4 +563,20 @@ STYLES***
 
 }
 
+.recipe_instructions h2 {
+    padding: 0 20px;
+    position: absolute;
+    left: 0px;
+    top: -55px;
+    color: #fff;
+    height: 50px;
+    width: 50%;
+    line-height: 50px;
+    text-align: left;
+    font-size: 24px;
+    -webkit-text-shadow: 0 0 0 rgba(0,0,0,0);
+    -moz-text-shadow: 0 0 0 rgba(0,0,0,0);
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
 
