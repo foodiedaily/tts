@@ -47,6 +47,19 @@ if (have_posts()) while (have_posts()) :
     } else {
         $author_uri = get_author_posts_url($post->post_author);
     }
+
+    $recipe_comments = get_comments("post_id=$recipe_id");
+    $recipe_rating = 0;
+    $rating_number = 0;
+    foreach($recipe_comments as $comment) {
+        $ratings = get_comment_meta( $comment->comment_ID, 'rating');
+        if($ratings[0] != null || $ratings[0] != 0) {
+            $recipe_rating += $ratings[0];
+            $rating_number++;
+        }
+    }
+    $ratings = $recipe_rating / $rating_number;
+    $ratings = ceil($ratings);
     ?>
     <!--row-->
     <div class="row">
@@ -57,7 +70,7 @@ if (have_posts()) while (have_posts()) :
             <div class="woocommerce">
                 <p class="stars">
                     <span>
-                        <a class="star-5 active" href="#"style="margin-left: 3%" >5</a>
+                        <a class="active star-<?php echo $ratings; ?>" href="#"style="margin-left: 3%" ><?php echo $ratings; ?></a>
                     </span>
                 </p>
             </div>

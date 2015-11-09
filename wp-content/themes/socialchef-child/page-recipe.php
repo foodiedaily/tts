@@ -53,6 +53,7 @@ if ($recipe_id) {
             $(".recipe_image").attr("src", image);
             $(".recipe_description").prepend(recipe.Description);
             $(".recipe_instructions").append("<li>" + recipe.Instructions + "</li>");
+            $(".woocommerce .stars span a").addClass('star-' + recipe.StarRating);
             for(var i = 0; i < recipe.Ingredients.length; i++) {
                 var ingredient = recipe.Ingredients[i];
                 if(ingredient.MetricQuantity && ingredient.MetricQuantity != 0) {
@@ -76,7 +77,7 @@ if ($recipe_id) {
             <div class="woocommerce">
                 <p class="stars">
                     <span>
-                        <a class="star-5 active" href="#"style="margin-left: 3%" >5</a>
+                        <a class="active" href="#"style="margin-left: 3%" >5</a>
                     </span>
                 </p>
             </div>

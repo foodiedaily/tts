@@ -45,6 +45,7 @@
 	</script>
 	<script>
 		var baseurl = "<?php echo get_bloginfo('template_url'); ?>";
+		var child_theme = "<?php get_stylesheet(); ?>";
 		var imagefolder = "<?php echo get_bloginfo('template_directory'); ?>";
 	</script>
     <?php 
