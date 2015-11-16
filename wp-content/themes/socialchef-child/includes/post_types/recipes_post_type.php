@@ -878,7 +878,18 @@ class SocialChef_Recipes_Post_Type extends SocialChef_BaseSingleton {
 				);
 			}
 		}
-		
+
+		if (isset($search_args['featured_product'])) {
+			$featured_product = intval($search_args['featured_product']);
+			if ($featured_product > 0) {
+				$meta_query[] = array(
+					'key'       => 'featured_product',
+					'value'     => $featured_product,
+					'compare' => '=',
+				);
+			}
+		}
+
 		if (count($tax_query) > 0) {
 			$args['tax_query'] = $tax_query;
 		}

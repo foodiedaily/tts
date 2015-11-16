@@ -66,6 +66,13 @@ if (isset($_GET['cat'])) {
 
 $search_args = array();
 
+$featured_product = 0;
+if (isset($_GET['prod'])) {
+	$featured_product = intval($_GET['prod']);
+	if ($featured_product > 0)
+		$search_args['featured_product'] = $featured_product;
+}
+
 $request_serv = 0;
 if (isset($_GET['serv'])) {
 	$request_serv = intval($_GET['serv']);
@@ -300,6 +307,45 @@ $terms = get_terms($taxonomies, $args);
 									?>
 								</select>
 							</div>
+							<div class="one-third">
+								<select name="prod" id="recipe_featured_product">
+									<option value="0"><?php echo __('Featured Recipe', 'socialchef'); ?></option>
+									<?php
+									$args = array('post_type' => 'product', 'posts_per_page' => -1);
+
+									$loop = get_posts($args);
+									//        var_dump($loop);
+//									$featured_product_str = ':' . __('Select featured product', 'socialchef') . ',';
+									foreach ($loop as $featured_product) {
+//										setup_postdata($featured_product);
+//            							var_dump($featured_product->ID);
+										?>
+										<option value="<?php echo $featured_product->ID; ?>"><?php echo $featured_product->post_title; ?></option>
+										<?php
+									}
+									?>
+								</select>
+							</div>
+							<div class="one-third">
+							<?php
+							wp_reset_postdata();
+							if (isset($search_args['featured_product'])) {
+								$featured_product = intval($search_args['featured_product']);
+								if ($featured_product > 0) {
+									$meta_query[] = array(
+										'key'       => 'featured_product',
+										'value'     => $featured_product,
+										'compare' => '=',
+									);
+								}
+							}
+							$args['post_type'] = "recipe";
+							$args['meta_query'] = $meta_query;
+							$posts_query = get_posts($args);
+
+							var_dump($posts_query);
+							?>
+								</div>
 						</div>
 						<div class="f-row">
 							<input type="submit" value="<?php esc_attr_e('Search for recipes', 'socialchef'); ?>">
@@ -308,19 +354,45 @@ $terms = get_terms($taxonomies, $args);
 				</div>
 			</div>				
 			<?php 
-			$recipe_results = $sc_recipes_post_type->list_recipes($paged, $posts_per_page, $sort_by, $sort_order, $meal_course_ids, $difficulty_ids, $category_ids, $search_args, $ingredient_ids); 
+			$recipe_results = $sc_recipes_post_type->list_recipes($paged, $posts_per_page, $sort_by, $sort_order, $meal_course_ids, $difficulty_ids, $category_ids, $search_args, $ingredient_ids);
 			if ( count($recipe_results) > 0 && $recipe_results['total'] > 0 ) { ?>
 				<div class="entries row">
 				<?php
+				if (isset($search_args['featured_product'])) {
+					$featured_product = intval($search_args['featured_product']);
+					if ($featured_product > 0) {
+						$meta_query[] = array(
+							'key'       => 'featured_product',
+							'value'     => $featured_product,
+							'compare' => '=',
+						);
+					}
+					$args['post_type'] = "recipe";
+					$args['meta_query'] = $meta_query;
+					$posts_query = get_posts($args);
+				}
+				if( !empty ( $posts_query ) ) {
+					foreach ($posts_query as $recipe_result) {
+						global $post, $sc_recipe_class;
+						$post = $recipe_result;
+//						var_dump($post);
+						setup_postdata( $post );
+						$sc_recipe_class = 'one-fourth';
+						get_template_part('includes/parts/recipe', 'item');
+					}
+				} else {
+
+
 					$count = 0;
 					foreach ($recipe_results['results'] as $recipe_result) {
 						global $post, $sc_recipe_class;
 						$post = $recipe_result;
-						setup_postdata( $post ); 
+						setup_postdata($post);
 						$sc_recipe_class = 'one-fourth';
 						get_template_part('includes/parts/recipe', 'item');
 						$count++;
 					}
+				}
 					if (((int)$recipe_results['results']) % 3 != 0)
 						echo '</div><!--entries-->';
 				?>
