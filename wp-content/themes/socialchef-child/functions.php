@@ -22,6 +22,20 @@ function my_scripts_method() {
 	);
 }
 
+add_action('wp_logout','go_home');
+function go_home(){
+	$url = home_url();
+	wp_redirect($url . "/login/");
+	exit();
+}
+
+add_action('wp_login','login_url');
+function login_url(){
+	$url = home_url();
+	wp_redirect($url . "/members/" . $_POST['log']);
+	exit();
+}
+
 add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 
 //hide admin bar
