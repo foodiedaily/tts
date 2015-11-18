@@ -81,6 +81,23 @@
 
 
 	$(document).ready(function(){
+		$('#fes-upload-form-recipe').submit(function(){
+			$(".ingredient_quantity").each(function() {
+				var val = $(this).val();
+				if(val.indexOf('/') === -1)
+				{
+					console.log("no dash found.");
+				} else {
+					val = val.split('/');
+					val = val[0]/val[1];
+					val = val.toFixed(2);
+					$(this).val(val);
+				}
+			});
+			return true;
+		});
+
+
 		var i =0;
 
 		$("#custom-search-1 #recipe_search_submit").on('click', function() {
