@@ -1,5 +1,6 @@
 <?php
 require_once('../../../wp-load.php');
+
 if (isset($_GET['ingredients'])) {
     $ingredient_array = (array)$_GET["ingredients"];
     if (count($ingredient_array)) {

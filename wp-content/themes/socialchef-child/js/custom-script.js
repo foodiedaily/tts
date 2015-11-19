@@ -97,6 +97,26 @@
 			return true;
 		});
 
+		$("#delete_recipe").on('click', function() {
+			event.preventDefault();
+			var id = $("#fesid").val();
+			console.log(id);
+			var url_to_delete = "http://tts.dev/wp-content/themes/socialchef-child/delete_recipe.php?id=" + id;
+			$.ajax({
+				type: "POST",
+				url: url_to_delete,
+				success: function (data) {
+					//var post = JSON.parse(data);
+					//console.log(post);
+					window.location.replace("http://tts.dev/");
+				},
+				error: function (xhr, ajaxOptions, thrownError) {
+					console.log(xhr.status);
+					console.log(thrownError);
+				}
+			});
+		});
+
 
 		var i =0;
 

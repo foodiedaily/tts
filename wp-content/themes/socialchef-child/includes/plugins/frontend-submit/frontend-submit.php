@@ -1444,6 +1444,8 @@ class Frontend_Submit
                     if (isset($_GET['fesid'])) {
                         $atts = array('type' => 'hidden', 'role' => 'internal', 'name' => 'fesid', 'id' => 'fesid', 'value' => wp_kses($_GET['fesid'], ''));
                         echo $this->_render_input($atts);
+                        $atts = array('type' => 'submit', 'role' => 'internal', 'name' => 'deleteRecipe', 'id' => 'delete_recipe', 'class' => 'button', 'value' => __('Delete this recipe', 'socialchef'));
+                        echo $this->_render_input($atts);
                     }
                     $atts = array('type' => 'hidden', 'role' => 'internal', 'name' => 'action', 'id' => 'fes_action', 'value' => 'frontend_recipe_submit');
                     echo $this->_render_input($atts);

@@ -587,4 +587,7 @@ STYLES***
     text-shadow: 0 0 0 rgba(0,0,0,0);
 }
 
+#delete_recipe {
+    margin-left: 10px;
+}
 
