@@ -81,6 +81,8 @@
 
 
 	$(document).ready(function(){
+		$(".alert-success").after('<a href="http://tts.dev/recipes/" id="go-to-recipes" class="button">Go to recipes</a>');
+
 		$('#fes-upload-form-recipe').submit(function(){
 			$(".ingredient_quantity").each(function() {
 				var val = $(this).val();
